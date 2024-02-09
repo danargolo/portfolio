@@ -1,14 +1,14 @@
 import * as S from './styles'
 
-export const Ul = ({itens, ...rest}) => {
+export const Ulist = ({  itens, ...rest}) => {
   return (
-    <S.Ul>
+    <S.Ulist >
       { itens 
         ? itens.map((item, index) => (
           <li key={item+index}>{item}</li>
         ))
         : null
       }
-    </S.Ul>
+    </S.Ulist>
   );
 }

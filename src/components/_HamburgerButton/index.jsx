@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import * as S from './styles'
+import { useDataContext } from '../../context';
 
 export const HamburgerBtn = () => {
-  const [isToggle, setIsToggle] = useState(false)
-  console.log(isToggle);
+  const { isToggle, setIsToggle } = useDataContext();
 
   const handleClick = () => {
     setIsToggle((prevState) => !prevState);

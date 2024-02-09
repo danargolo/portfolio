@@ -21,7 +21,7 @@ export const SpanMenu = styled.span`
   background-color: red;
   border-radius: .15rem;
   transform-origin: left center;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
 
   &.Span1 {

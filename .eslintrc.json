@@ -11,6 +11,10 @@
   "plugins": ["react"],
   "rules": {
     "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semicolon": ["error", "always"],
+    "trailing-comma": ["error", {"multiline": "never", "singleline": "never"}],
+    "no-console": "warn"
   }
 }

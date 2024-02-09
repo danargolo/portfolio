@@ -16,18 +16,33 @@ export const MenuWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin: 0 10.5rem 0 8.5625rem;
+  margin: 0 10.0rem 0 8.5625rem;
   align-items: center;
 
+  & button {
+    display: none;
+  }
 
-  & Ul {
+
+    & ul{
+    @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+      display: none;
+    }
+
     display: flex;
     width: 21.5625rem;
     justify-content: space-between;
-    border: 2px solid green;
 
     li {
       font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+    margin: 0 1.1rem 0 2.0625rem;
+
+    & button {
+      display: flex;
     }
   }
 

@@ -8,9 +8,7 @@ export const Header = styled.header`
   justify-content: center;
   align-items: center;
   min-height: 5.625rem;
-  background-color: ${ ({theme}) => theme.colors.darkNavy };
-
-  
+  background-color: ${ ({theme}) => theme.colors.darkNavy };  
 ` 
 
 export const ImgWrapper = styled.div`
@@ -23,7 +21,6 @@ export const ImgWrapper = styled.div`
   z-index: 99;
 
   & img {
-    /* position: fixed; */
     left: 3.75rem;
   }
 
@@ -45,88 +42,48 @@ export const ImgWrapper = styled.div`
 `
 
 export const MenuWrapper = styled.nav`
-  /* display: flex;
-  width: 100%; */
-  top: 0;
-  left:6.5rem;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in-out 0s;
-  /* right: 0; */
+  width: 55%;
+  margin-right: 6.25rem;
 
-  
-    & ul{
-    display: flex;
-    width: 21.5625rem;
-    justify-content: space-between;
-
+  & ul{
+  display: flex;
+  width: 21.5625rem;
+  justify-content: space-between;
     li {
       font-size: 1.5rem;
     }
   }
 
-  /* @media (max-width: ${({theme}) => theme.breakpoints.md}) {
-      
-    } */
-
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
-    /* display: none; */
-    /* transform: translateX(100%); */
-    
+    position: fixed;
+    margin: 0;
+    top: 5.625rem;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    background-color: ${ ({theme}) => theme.colors.darkNavy };
+    opacity: 0.95;
+    transition: transform 0.65s ease-in-out 0s;
 
-    /* & button {
-      display: flex;
-      position: relative;
-      z-index: 0;
-    } */
+    & ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      height: 50%;
+      gap: 1.5rem;
+    }
 
     ${(props) =>
-        props.$active && `
-          display:flex;
-          justify-content: space-between;
-          margin: 0 10rem 0 8.5625rem;
-          align-items: center;
-          z-index: 0;
-          border: 2px solid red;
-          flex-direction: column;
-          border: 2px solid red;
-          height: 100vh;
-          width: 50vw;
-          position: fixed;
-          opacity: 0.95;
-          background-color: #1F3A5F;
-          transform: translateX(0);
-          transition: transform 0.5s ease-in-out 0s;
-          // left:52%;
-
-          & ul{
-            flex-direction: column;
-            width: 0;
-            position: relative;
-          }
-        `}
+      props.$active && `
+        transform: translateX(55%);
+        
+      `}
 
     ${(props) => 
-      props.$active || `
-        display:flex;
-        border: 2px solid red;
-        flex-direction: column;
-        border: 2px solid blue;
-        height: 100vh;
-        width: 50vw;
-        position: fixed;
-        background-color: #1F3A5F;
+      !props.$active && `       
         transform: translateX(100%);
-        transition: transform 0.5s ease-in-out 0s;
-        // left:52%;
-
-        & ul {
-          flex-direction: column;
-          width: 0;
-          position: relative;
-        }
-    `
-
-    }
+    `}
   }
 
 `

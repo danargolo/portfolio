@@ -8,7 +8,7 @@ export const Header = styled.header`
   justify-content: center;
   align-items: center;
   min-height: 5.625rem;
-  background-color: ${ ({theme}) => theme.colors.darkNavy };  
+  background-color: ${ ({theme}) => theme.colors.primary100 };  
 ` 
 
 export const ImgWrapper = styled.div`
@@ -61,7 +61,7 @@ export const MenuWrapper = styled.nav`
     height: 100vh;
     width: 100vw;
     z-index: 0;
-    background-color: ${ ({theme}) => theme.colors.darkNavy };
+    background-color: ${ ({theme}) => theme.colors.primary100 };
     opacity: 0.95;
     transition: transform 0.65s ease-in-out 0s;
 

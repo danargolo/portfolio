@@ -18,7 +18,7 @@ export const SpanMenu = styled.span`
   width: 1.875rem;
   height: .1875rem;
   margin: .0625rem;
-  background-color: red;
+  background-color: ${ ({theme}) => theme.colors.primary300 };
   border-radius: .15rem;
   transform-origin: left center;
   transition: all 0.25s ease-in-out;

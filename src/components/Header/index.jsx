@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 import * as S from './styles'
 import logo from '/public/logo.svg'
-import { Ulist } from '../_Ulist'
-import { HamburgerBtn } from '../_HamburgerButton'
+import { Ulist } from '../ui/_Ulist'
+import { HamburgerBtn } from '../ui/_HamburgerButton'
 import { useDataContext } from '@/context'
 
 const menu = [ 'Sobre' , 'Projetos', 'Contato' ]

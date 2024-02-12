@@ -1,7 +1,7 @@
 import * as S from './styles'
 
-export const Icon = ({src, ...rest}) => {
+export const Icon = (data) => {
   return (
-    <S.Icon src {...rest} />
+    <S.Icon {...data} />
   );
 }

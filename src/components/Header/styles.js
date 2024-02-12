@@ -49,6 +49,7 @@ export const MenuWrapper = styled.nav`
   display: flex;
   width: 21.5625rem;
   justify-content: space-between;
+  color: ${({ theme }) => theme.colors.text100 };
     li {
       font-size: 1.5rem;
     }

@@ -1,9 +1,9 @@
-import { Icon } from '../_Icons'
+import { Icon } from '../ui/_Icons'
 import * as S from './styles'
 
 import linkedin from "../../../public/icons/linkedin.png"
 import github from "../../../public/icons/github.png"
-import { Button } from '../_Button'
+import { Button } from '../ui/_Button'
 
 export const Hero = () => {
   return(

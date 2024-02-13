@@ -16,27 +16,12 @@ export const Hero = () => {
           <S.SentenceText>Apaixonado por codificar desejos.</S.SentenceText>
         </S.TextContainer>
         <S.IconsContainer>
-          <Icon alt="Icon Linkedin" src={linkedin}/>
-          <Icon alt="Icon GitHub" src={github}/>
+          <Icon width={36} heigth={36} alt="Icon Linkedin" src={linkedin}/>
+          <Icon width={36} heigth={36} alt="Icon GitHub" src={github}/>
           <Button text="Download CV"/>
         </S.IconsContainer>
       </S.HeroWrapper>
     </S.Hero>
-    // <section className={styles.hero}>
-    //   <div className={styles.container_hero}>
-    //     <div className={styles.intro_hero}>
-    //       <h6>{ptbr.hero.salute}</h6>
-    //       <h4 className={ styles.text_h4 }>{ptbr.hero.name}</h4>
-    //       <h2 className={ styles.text_h2 }>Desenvolvedor Front-End</h2>
-    //       <p className={ styles.text_p } >{ptbr.hero.text}</p>
-    //     </div>
-    //     <Avatar />
-    //   </div>
-    //   <ScrollLink href="#about" >
-    //     <Image src={scroll} className={ styles.icon } alt="" width={50} height={50}/>
-    //   </ScrollLink>
-      
-    // </section>
   )
 }
 

@@ -18,7 +18,9 @@ export const Hero = styled.section`
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3.15rem;
+  align-items: center;
+  padding: 10.9375rem 0;
+  gap: 3rem;
   width: 26rem;
 
 
@@ -27,11 +29,16 @@ export const HeroWrapper = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0.9rem;
   gap: 1.25rem;
 `
 
 export const IconsContainer = styled.div`
   display: flex;
+  gap: 1.25rem;
+  width: 20rem;
+  align-items: center;
+  margin-left: 1.5625rem;
 `
 
 export const NameText = styled(Text)`

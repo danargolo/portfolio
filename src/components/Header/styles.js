@@ -58,7 +58,7 @@ export const MenuWrapper = styled.nav`
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
     margin: 0;
-    top: 5.625rem;
+    top: 5.225rem;
     height: 100vh;
     width: 100vw;
     z-index: 0;

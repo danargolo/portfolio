@@ -1,6 +1,6 @@
 'use client'
 
-export const theme = {
+export const dark = {
   colors: {
     primary100:'#1F3A5F',
     primary200:'#4d648d',
@@ -12,6 +12,26 @@ export const theme = {
     bg100:'#0F1C2E',
     bg200:'#1f2b3e',
     bg300:'#374357',
+  },
+  breakpoints: { 
+    sm: '480px',
+    md: '768px',
+    lg: '1279px',
+    xl: '1440px',
+  },
+}
+export const light = {
+  colors: {
+    primary100:'#d4eaf7',
+    primary200:'#b6ccd8',
+    primary300:'#3b3c3d',
+    accent100:'#71c4ef',
+    accent200:'#00668c',
+    text100:'#1d1c1c',
+    text200:'#313d44',
+    bg100:'#fffefb',
+    bg200:'#f5f4f1',
+    bg300:'#cccbc8',
   },
   breakpoints: { 
     sm: '480px',

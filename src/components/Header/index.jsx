@@ -1,6 +1,6 @@
 'use client'
   
-import { useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 import * as S from './styles'
@@ -12,11 +12,25 @@ import { useDataContext } from '@/context'
 const menu = [ 'Sobre' , 'Projetos', 'Contato' ]
 
 export const Header= () => {
-  const { isToggle } = useDataContext();
-  const menuRef = useRef(null);
+  const { isToggle, setIsToggle } = useDataContext();
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = useCallback(() => {
+    setIsToggle(false)
+  }, [])
+
+  useEffect(() => {
+    console.log('inicio');
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+
+  const headerRef = useRef(null);
 
   return(
-    <S.Header id='header'>
+    <S.Header ref={headerRef} id='header'>
       <S.ImgWrapper>
         <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority/>
         <HamburgerBtn />

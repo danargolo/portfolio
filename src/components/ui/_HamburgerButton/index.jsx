@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import * as S from './styles'
-import { useDataContext } from '../../context';
+import { useDataContext } from '@/context';
 
 export const HamburgerBtn = () => {
   const { isToggle, setIsToggle } = useDataContext();

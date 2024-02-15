@@ -1,6 +1,6 @@
 'use client'
   
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect } from 'react'
 import Image from 'next/image'
 
 import * as S from './styles'
@@ -25,10 +25,9 @@ export const Header= () => {
     };
   }, [handleScroll]);
 
-  const headerRef = useRef(null);
 
   return(
-    <S.Header ref={headerRef} id='header'>
+    <S.Header id='header'>
       <S.ImgWrapper>
         <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority/>
         <HamburgerBtn />

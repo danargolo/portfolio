@@ -8,7 +8,12 @@ export const Header = styled.header`
   justify-content: center;
   align-items: center;
   min-height: 5.625rem;
-  background-color: ${ ({theme}) => theme.colors.primary100 };  
+  background-color: ${ ({theme}) => theme.colors.primary100 };
+
+  @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+    position: fixed;
+    width: 100%;
+  }
 ` 
 
 export const ImgWrapper = styled.div`
@@ -33,7 +38,6 @@ export const ImgWrapper = styled.div`
 
       & button {
         display: flex;
-        /* position: fixed; */
         right: 3.75rem; ;
         z-index: 99;
         
@@ -58,7 +62,7 @@ export const MenuWrapper = styled.nav`
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
     margin: 0;
-    top: 5.225rem;
+    top: 5.6rem;
     height: 100vh;
     width: 100vw;
     z-index: 0;

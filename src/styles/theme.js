@@ -12,6 +12,7 @@ export const dark = {
     bg100:'#0F1C2E',
     bg200:'#1f2b3e',
     bg300:'#374357',
+    accent200op:'#cee8ff35',
   },
   breakpoints: { 
     sm: '480px',
@@ -32,6 +33,7 @@ export const light = {
     bg100:'#fffefb',
     bg200:'#f5f4f1',
     bg300:'#cccbc8',
+    accent200op:'#00668c35',
   },
   breakpoints: { 
     sm: '480px',

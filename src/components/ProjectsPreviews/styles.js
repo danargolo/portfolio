@@ -3,7 +3,8 @@
 import styled from "styled-components"
 
 export const Text = styled.p`
-   color: ${({ theme }) => theme.colors.text100 };
+  font-size: 26px;
+  color: ${({ theme }) => theme.colors.text100 };
 `
 
 export const Projects = styled.section`
@@ -18,19 +19,31 @@ export const Projects = styled.section`
 export const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 3.9375rem 0;
+  padding: 3.1rem 0;
   gap: 3rem;
   width: 26rem;
 `
 export const CardsWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 23.5rem;
-  border: 2px solid red;
-  padding: 10px;
+  width: 21.9rem;
+  height: 30.9375rem;
+  /* margin-left: 0.9rem; */
+  /* padding: 10px; */
   gap: 1.7rem;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scrollbar-width: none;
   scroll-snap-type: x mandatory;
+
+  & > :first-child {
+    margin-left: 1.5rem;
+  }
+
+  & > :last-child {
+    margin-right: 1.5rem;
+  }
+  /* border: 2px solid red; */
 `
 

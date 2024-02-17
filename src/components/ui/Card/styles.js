@@ -16,20 +16,8 @@ export const Card = styled.div`
   height: 28rem;
   border-radius: 12px;
   background-color: ${({theme}) => theme.colors.bg100};
-  box-shadow: 13px 14px 23px -9px rgba(0,0,0,0.62);
-  scroll-snap-align: start;
-
-  &:hover {
-  transform: translateX(calc(-200px * 5)); /* Largura do card * quantidade de cards */
-  animation: scrollAnimation 10s linear infinite;
-  }
-
-/* Animação para o movimento infinito */
-  @keyframes scrollAnimation {
-    to {
-      transform: translateX(0);
-    }
-  }
+  box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62);
+  scroll-snap-align: center;
   /* transition: all 0.35s ease-in-out;
 
   &:hover {

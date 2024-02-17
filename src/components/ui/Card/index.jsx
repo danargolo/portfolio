@@ -3,12 +3,12 @@ import * as S from './styles'
 import test from 'public/codeInProgress.png'
 import test2 from 'public/projeto.png'
 
-export const Card = () => {
+export const Card = ({text}) => {
   return (
     <S.Card>
       <S.BackgroundCard>
         <S.Tittle>
-          Projeto teste
+          {text}
         </S.Tittle>
         <S.ImageWrapper src={test2} width={290} height={210}/>
         <S.Stacks>

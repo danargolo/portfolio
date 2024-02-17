@@ -47,3 +47,15 @@ export const CardsWrapper = styled.div`
   /* border: 2px solid red; */
 `
 
+export const Indicators = styled.div`
+  display: flex;
+  justify-content: center;
+`
+export const Indicator = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+`

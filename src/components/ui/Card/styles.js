@@ -17,11 +17,25 @@ export const Card = styled.div`
   border-radius: 12px;
   background-color: ${({theme}) => theme.colors.bg100};
   box-shadow: 13px 14px 23px -9px rgba(0,0,0,0.62);
+  scroll-snap-align: start;
 
   &:hover {
-    transform: translateY(-3px) scale(1.005);
-    box-shadow: 13px 14px 23px -4px rgba(0,0,0,0.62);
+  transform: translateX(calc(-200px * 5)); /* Largura do card * quantidade de cards */
+  animation: scrollAnimation 10s linear infinite;
   }
+
+/* Animação para o movimento infinito */
+  @keyframes scrollAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+  /* transition: all 0.35s ease-in-out;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.006);
+    box-shadow: 13px 14px 23px -4px rgba(0,0,0,0.62);
+  } */
 `
 export const BackgroundCard = styled.div`
   display: flex;
@@ -60,11 +74,11 @@ export const Stacks = styled.ul`
   /* width: 100%; */
   /* background-color: ${({theme}) => theme.colors.accent200op}; */
   /* border: 2px solid ${({theme}) => theme.colors.bg100}; */
+  list-style: none;
   border-radius: 5px;
   gap: 5px;
   
   & li {
-    list-style: none;
     padding: 0 4px;
     background-color: ${({theme}) => theme.colors.accent200};
     border-radius: 5px;
@@ -76,8 +90,8 @@ export const Description = styled(Text)`
   max-width: 100%;
   height: 100px;
   max-height: 100px;
+  padding-top: 10px;
   background-color: ${({theme}) => theme.colors.accent200op};
-  /* border: 2px solid ${({theme}) => theme.colors.bg100}; */
   border-radius: 5px;
   overflow-wrap: break-word;
   overflow: auto;

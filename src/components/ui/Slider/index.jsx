@@ -45,7 +45,7 @@ export const Slider = ({ Component, data }) => {
           ))}
       </S.Wrapper>
       <S.IndicatorWrapper>
-        {data.map((index) => (
+        {data.map((_, index) => (
           <S.Indicator
             key={index}
             $active={activeIndicator === index}

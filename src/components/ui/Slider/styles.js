@@ -15,17 +15,17 @@ export const Projects = styled.section`
   background-color: ${({theme}) => theme.colors.primary200};
 
 `
-
-export const ProjectsWrapper = styled.div`
+export const Slider = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.1rem 0;
-  gap: 3rem;
-  width: 26rem;
+  /* min-height: 25.625rem;
+  background-color: ${({theme}) => theme.colors.primary200}; */
+
 `
-export const CardsWrapper = styled.div`
+
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   width: 21.9rem;

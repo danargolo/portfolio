@@ -52,20 +52,23 @@ export const IndicatorWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 65%;
-  gap: 10px;
+  gap: 12px;
 `
 export const Indicator = styled.div`
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: gray;
   margin: 0 5px;
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+
   ${({$active}) => {
     if($active) {
       return css`
         background-color: white;
-        transform: scale(1.10);
+        transform: translateY(-1.5px) scale(1.10);
       `
     }
   }}

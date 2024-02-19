@@ -15,7 +15,6 @@ export const Projects = styled.section`
   background-color: ${({theme}) => theme.colors.primary200};
 
 `
-
 export const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,38 +23,4 @@ export const ProjectsWrapper = styled.div`
   padding: 3.1rem 0;
   gap: 3rem;
   width: 26rem;
-`
-export const CardsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 21.9rem;
-  height: 30.9375rem;
-  /* margin-left: 0.9rem; */
-  /* padding: 10px; */
-  gap: 1.7rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-
-  & > :first-child {
-    margin-left: 1.5rem;
-  }
-
-  & > :last-child {
-    margin-right: 1.5rem;
-  }
-  /* border: 2px solid red; */
-`
-
-export const IndicatorWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-export const Indicator = styled.div`
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: gray;
-  margin: 0 5px;
-  cursor: pointer;
 `

@@ -8,7 +8,6 @@ export const Slider = ({ Component, data }) => {
   const [activeIndicator, setActiveIndicator] = useState(0);
 
   const handleClick = (index) => {
-    setActiveIndicator(index);
     if (wrapperRef.current) {
       wrapperRef.current.scrollTo({
         left: index * wrapperRef.current.offsetWidth,

@@ -1,6 +1,7 @@
 "use client"
 
 import styled from "styled-components"
+import css from "styled-jsx/css"
 
 export const Text = styled.p`
   font-size: 26px;
@@ -50,12 +51,23 @@ export const Wrapper = styled.div`
 export const IndicatorWrapper = styled.div`
   display: flex;
   justify-content: center;
+  width: 65%;
+  gap: 10px;
 `
 export const Indicator = styled.div`
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: gray;
   margin: 0 5px;
   cursor: pointer;
+  ${({$active}) => {
+    if($active) {
+      return css`
+        background-color: white;
+        transform: scale(1.10);
+      `
+    }
+  }}
+
 `

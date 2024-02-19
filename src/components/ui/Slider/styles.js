@@ -1,7 +1,6 @@
 "use client"
 
-import styled from "styled-components"
-import css from "styled-jsx/css"
+import styled, {css} from "styled-components"
 
 export const Text = styled.p`
   font-size: 26px;

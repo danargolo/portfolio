@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import * as S from './styles';
 
-export const Slider = ({ Component, data }) => {
+export const Slider = ({ Component, data, className }) => {
   const wrapperRef = useRef(null);
   const [activeIndicator, setActiveIndicator] = useState(0);
+  const [totalIndicators, setTotalIndicators] = useState(0);
 
   const handleClick = (index) => {
     if (wrapperRef.current) {
@@ -25,8 +26,17 @@ export const Slider = ({ Component, data }) => {
       }
     };
 
+    // if (wrapperRef.current) {
+    //   wrapperRef.current.addEventListener('scroll', handleScroll);
+    // }
     if (wrapperRef.current) {
       wrapperRef.current.addEventListener('scroll', handleScroll);
+      const totalChildren = wrapperRef.current.children.length;
+      const childrenWidth = wrapperRef.current.children[0].clientWidth;
+      const wrapperWidth = wrapperRef.current.offsetWidth;
+      const displayChildren = Math.round(wrapperWidth / childrenWidth)
+      const totalIndicators = Math.ceil(totalChildren / displayChildren);
+      setTotalIndicators(totalIndicators);
     }
 
     return () => {
@@ -37,14 +47,14 @@ export const Slider = ({ Component, data }) => {
   }, []);
 
   return (
-    <S.Slider>
+    <S.Slider className={className}>
       <S.Wrapper ref={wrapperRef}>
           {data.map((item, index) => (
             <Component key={index} {...item} />
           ))}
       </S.Wrapper>
       <S.IndicatorWrapper>
-        {data.map((_, index) => (
+        {[...Array(totalIndicators).keys()].map((_, index) => (
           <S.Indicator
             key={index}
             $active={activeIndicator === index}

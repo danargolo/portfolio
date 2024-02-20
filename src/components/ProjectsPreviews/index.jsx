@@ -13,7 +13,7 @@ export const Projects = () => {
     <S.Projects id="projects">
       <S.ProjectsWrapper>
         <S.Text>Projetos</S.Text>
-        <Slider Component={Card} data={projects}/>
+        <S.Cards Component={Card} data={projects}/>
         <Button text="Ver mais"/>
       </S.ProjectsWrapper>
     </S.Projects>

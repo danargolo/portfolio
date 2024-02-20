@@ -26,13 +26,15 @@ export const ProjectsWrapper = styled.div`
   width: 26rem;
 `
 
-export const Cards = styled(Slider)`
+export const StyledSlider = styled(Slider)`
   /* @media (min-width: ${({theme}) => theme.breakpoints.md}) { */
   @media (min-width: 769px) {
     width: 65.625rem;
     
+    
     &>:nth-child(1) {
       width: 65.625rem;
+      z-index: 0;
     }
     &>:nth-child(2) {
       /* display: none; */

@@ -65,7 +65,7 @@ export const MenuWrapper = styled.nav`
     top: 5.6rem;
     height: 100vh;
     width: 100vw;
-    z-index: 0;
+    z-index: 50;
     background-color: ${ ({theme}) => theme.colors.primary100 };
     opacity: 0.95;
     transition: transform 0.65s ease-in-out 0s;

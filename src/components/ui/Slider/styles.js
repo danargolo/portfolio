@@ -38,8 +38,12 @@ export const IndicatorWrapper = styled.div`
   justify-content: center;
   width: 65%;
   gap: 12px;
+  z-index: 1;
+
 `
 export const Indicator = styled.div`
+  display: flex;
+  position: relative;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -47,6 +51,7 @@ export const Indicator = styled.div`
   margin: 0 5px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  z-index: 0;
 
 
   ${({$active}) => {
@@ -54,6 +59,8 @@ export const Indicator = styled.div`
       return css`
         background-color: white;
         transform: translateY(-1.5px) scale(1.10);
+        z-index: 0;
+        
       `
     }
   }}

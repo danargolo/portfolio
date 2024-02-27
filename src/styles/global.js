@@ -10,4 +10,8 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
+  hr {
+    width: 100%;
+  }
+
 `

@@ -13,6 +13,7 @@ export const Header = styled.header`
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
     width: 100%;
+    z-index: 50;
   }
 ` 
 

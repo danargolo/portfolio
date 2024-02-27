@@ -10,10 +10,12 @@ export const Text = styled.p`
 
 export const Projects = styled.section`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   min-height: 25.625rem;
   background-color: ${({theme}) => theme.colors.primary200};
+  z-index: 1;
 
 `
 export const ProjectsWrapper = styled.div`

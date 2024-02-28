@@ -3,19 +3,26 @@
 import styled from "styled-components"
 
 export const Text = styled.p`
+  display: flex;
   font-size: 26px;
   color: ${({ theme }) => theme.colors.text100 };
 `
 
 export const About = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 25.625rem; */
-  height: 40vh; 
+  width: 100vw;
+  height: 100vh; 
+  gap: 3rem;
   background-color: ${({theme}) => theme.colors.primary200};  
   position: relative;
   z-index: 1;
+
+  & hr {
+    width: 84%;
+  }
 `
 export const AboutWrapper = styled.div`
   display: flex;
@@ -23,6 +30,23 @@ export const AboutWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 3.1rem 0;
-  gap: 3rem;
-  width: 26rem;
+  gap: 0.2rem;
+  width: 25rem;
+  border: 1px solid red;
+  height: 30rem;
 `
+
+export const SentenceText = styled(Text)`
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: justify;
+  color: black;
+`
+export const AboutText = styled(Text)`
+  margin: 20px;
+  font-size: clamp(18px, 3vw, 20px);
+  line-height: 1.5rem;
+  text-align: justify;
+`
+

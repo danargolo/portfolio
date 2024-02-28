@@ -13,7 +13,6 @@ export const Hero = () => {
         <S.TextContainer>
           <S.NameText>Olá, sou Danilo Argolo</S.NameText>
           <S.RoleText>Desenvolvedor Front-end</S.RoleText>
-          <S.SentenceText>Apaixonado por codificar desejos.</S.SentenceText>
         </S.TextContainer>
         <S.IconsContainer>
           <Icon width={36} heigth={36} alt="Icon Linkedin" src={linkedin}/>

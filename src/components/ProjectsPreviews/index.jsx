@@ -10,8 +10,8 @@ const projects = ['1','2','3','4','5'];
 export const Projects = () => {
   return (
     <S.Projects id="projects">
+      <S.Text>Projetos</S.Text>
       <S.ProjectsWrapper>
-        <S.Text>Projetos</S.Text>
         <S.StyledSlider Component={Card} data={projects}/>
         <Button text="Ver mais" disabled/>
       </S.ProjectsWrapper>

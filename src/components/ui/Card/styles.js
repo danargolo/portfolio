@@ -59,6 +59,7 @@ export const Tittle = styled(Text)`
 export const Stacks = styled.ul`
   display: flex;
   align-self: start;
+  margin-top: 5px;
   /* width: 100%; */
   /* background-color: ${({theme}) => theme.colors.accent200op}; */
   /* border: 2px solid ${({theme}) => theme.colors.bg100}; */
@@ -78,6 +79,7 @@ export const Description = styled(Text)`
   max-width: 100%;
   height: 100px;
   max-height: 100px;
+  margin-top: 10px;
   padding-top: 10px;
   background-color: ${({theme}) => theme.colors.accent200op};
   border-radius: 5px;

@@ -29,7 +29,6 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.1rem 0;
   gap: 0.2rem;
   width: 25rem;
   height: fit-content;

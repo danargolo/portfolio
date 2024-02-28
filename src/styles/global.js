@@ -11,7 +11,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   hr {
-    width: 100%;
+    height: 0.225rem;
+    background-image: linear-gradient( 45deg,
+      ${({theme}) => theme.colors.primary100 } 0%, 
+      ${({theme}) => theme.colors.bg200 } 51%, 
+      ${({theme}) => theme.colors.primary100 } 100%
+    );
+    border: none;
   }
 
 `

@@ -14,7 +14,6 @@ export const Projects = () => {
         <S.Text>Projetos</S.Text>
         <S.StyledSlider Component={Card} data={projects}/>
         <Button text="Ver mais" disabled/>
-        <hr />
       </S.ProjectsWrapper>
     </S.Projects>
   );

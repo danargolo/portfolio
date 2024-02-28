@@ -9,7 +9,7 @@ import { Ulist } from '../ui/Ulist'
 import { HamburgerBtn } from '../ui/HamburgerButton'
 import { useDataContext } from '@/context'
 
-const menu = [ 'Sobre' , 'Projetos', 'Contato' ]
+const menu = [ 'Projetos', 'Sobre', 'Contato' ]
 
 export const Header= () => {
   const { isToggle, setIsToggle } = useDataContext();

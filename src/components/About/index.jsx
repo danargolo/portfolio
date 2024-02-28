@@ -1,3 +1,4 @@
+import { Tab } from '../ui/Tab';
 import * as S from './styles'
 
 
@@ -5,12 +6,14 @@ const text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean c
 export const About = () => {
   return (
     <S.About id="about">
-      <hr />
       <S.Text>Sobre</S.Text>
-      <S.AboutWrapper>
+      <div>
         <S.SentenceText>Apaixonado por codificar desejos.</S.SentenceText>
-        <S.AboutText>{text}</S.AboutText>
-      </S.AboutWrapper>
+        <S.AboutWrapper>         
+          <S.AboutText>{text}</S.AboutText>
+          <Tab />
+        </S.AboutWrapper>
+      </div>
     </S.About>
   );
 };

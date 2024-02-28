@@ -14,7 +14,7 @@ export const About = styled.section`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh; 
+  height: fit-content; 
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.primary200};  
   position: relative;
@@ -32,8 +32,7 @@ export const AboutWrapper = styled.div`
   padding: 3.1rem 0;
   gap: 0.2rem;
   width: 25rem;
-  border: 1px solid red;
-  height: 30rem;
+  height: fit-content;
 `
 
 export const SentenceText = styled(Text)`

@@ -2,7 +2,7 @@
 
 import styled, {css} from "styled-components"
 
-export const Slider = styled.section`
+export const Slider = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

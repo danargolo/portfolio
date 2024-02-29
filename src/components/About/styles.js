@@ -15,7 +15,7 @@ export const About = styled.section`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: fit-content; 
+  height: fit-content;
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.primary200};  
   position: relative;
@@ -30,6 +30,7 @@ export const AboutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 1rem ;
 
   @media (min-width: 769px) {
     flex-direction: row;
@@ -51,7 +52,8 @@ export const ContainerText = styled.div`
 
   @media (min-width: 769px) {
     width: 50%;
-    justify-content: right;
+    /* justify-content: right; */
+    align-items: flex-start;
     gap: 0.5rem;
   }
 `
@@ -62,7 +64,7 @@ export const AboutSentence = styled.p`
   font-size: 20px;
   font-weight: 700;
   text-align: justify;
-  color: black;
+  color: ${({theme}) => theme.colors.text200};
 
  
   
@@ -70,13 +72,16 @@ export const AboutSentence = styled.p`
 export const AboutText = styled.p`
   margin: 20px;
   /* text-size-adjust: 100%; */
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: clamp(1rem, 3vw, 1.125rem);
   line-height: 1.5rem;
   text-align: justify;
+  /* border: 2px solid red; */
+  color: ${({theme}) => theme.colors.text200};
 
   @media (min-width: 769px) {
-    width: 360px;
+    width: 460px;
     height: 360px;
+    text-align: left;
   }
 `
 

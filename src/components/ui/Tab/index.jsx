@@ -6,7 +6,7 @@ import * as S from './styles';
 const tab = ["Linguagens", "Frameworks", "Ferramentas"]
 
 const categorias = {
-  Linguagens: ["Java", "JavaScript", "Python","Java", "JavaScript", "Python","Java", "JavaScript", "Python",],
+  Linguagens: ["JavaScript", "TypeScript", "Java", "Python"],
   Frameworks: ["React", "Angular", "Vue"],
   Ferramentas: ["VS Code", "Git", "Docker"]
 };

@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { Slider } from "../ui/Slider"
 
 export const Text = styled.p`
+  margin-top: 2.5rem;
   font-size: 26px;
   color: ${({ theme }) => theme.colors.text100 };
 `

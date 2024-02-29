@@ -12,6 +12,7 @@ export const Tab = styled.div`
   width: 100%;
   margin: 1.25rem;
 
+
   @media (min-width: 769px) {
     width: 35%;
   }
@@ -46,6 +47,7 @@ export const ItemTab = styled.div`
   height: 100%;
   width: 100%;
   border-radius: .75rem .75rem 0 0;
+  color: ${({theme}) => theme.colors.text100};
   background-color: ${({ $active, theme }) =>
     $active ? theme.colors.primary100 : theme.colors.bg300}; //background degrade?
 
@@ -71,11 +73,14 @@ export const Content = styled.div`
   align-content: center;
   gap: 15px;
   padding: 10px;
+  color: ${({theme}) => theme.colors.text200};
   background-color: ${ ({theme}) => theme.colors.primary100 };
   /* background: ${({theme}) => theme.colors.degrade}; */
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 0 0 .75rem .75rem;
+
+
 `
 
 export const Item = styled.div`

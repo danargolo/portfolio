@@ -12,18 +12,17 @@ export const Header = styled.header`
 
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 50;
   }
 ` 
 
 export const ImgWrapper = styled.div`
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   margin: 0 10.0rem 0 5.5625rem;
-  min-height: 5.625rem;
   z-index: 99;
 
   & img {
@@ -35,7 +34,7 @@ export const ImgWrapper = styled.div`
     }
 
     @media (max-width: ${({theme}) => theme.breakpoints.md}) {
-      margin: 0 1.1rem 0 2.0625rem;
+      margin: 0 1.1rem 0 0.0625rem;
 
       & button {
         display: flex;
@@ -75,14 +74,14 @@ export const MenuWrapper = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 45%;
+      width: 50%;
       height: 50%;
       gap: 1.5rem;
     }
 
     ${(props) =>
       props.$active && `
-        transform: translateX(55%);
+        transform: translateX(45%);
         
       `}
 

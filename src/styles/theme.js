@@ -13,6 +13,7 @@ export const dark = {
     bg200:'#1f2b3e',
     bg300:'#374357',
     accent200op:'#cee8ff35',
+    degrade: "linear-gradient(0deg, rgba(87,138,182,0.36) 0%, rgba(59,87,112,0.38) 100%)"
   },
   breakpoints: { 
     sm: '480px',

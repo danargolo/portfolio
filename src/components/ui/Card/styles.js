@@ -16,11 +16,18 @@ export const Card = styled.div`
   height: 28rem;
   border-radius: 12px;
   background-color: ${({theme}) => theme.colors.bg100};
-  box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62);
+  /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   scroll-snap-align: center;
-  /* transition: all 0.35s ease-in-out;
+  /* transition: all 0.35s ease-in-out; */
 
-  &:hover {
+  /* @media (min-width: 769px) {
+    width: 19.7rem;
+    height: 27rem;
+    
+  } */
+
+  /*&:hover {
     transform: translateY(-6px) scale(1.006);
     box-shadow: 13px 14px 23px -4px rgba(0,0,0,0.62);
   } */

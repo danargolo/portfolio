@@ -1,3 +1,4 @@
+import { About } from '@/components/About'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Projects } from '@/components/ProjectsPreviews'
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Projects />
+      <About />
     </>
   )
 }

@@ -26,9 +26,6 @@ export const Slider = ({ Component, data, className }) => {
       }
     };
 
-    // if (wrapperRef.current) {
-    //   wrapperRef.current.addEventListener('scroll', handleScroll);
-    // }
     if (wrapperRef.current) {
       wrapperRef.current.addEventListener('scroll', handleScroll);
       const totalChildren = wrapperRef.current.children.length;

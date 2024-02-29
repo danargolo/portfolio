@@ -12,6 +12,7 @@ export const Hero = styled.section`
   align-items: center;
   min-height: 25.625rem;
   background-color: ${({theme}) => theme.colors.bg100};
+  width: 100vw;
 
 `
 
@@ -21,7 +22,7 @@ export const HeroWrapper = styled.div`
   align-items: center;
   padding: 10.9375rem 0;
   gap: 3rem;
-  width: 26rem;
+  width: 25rem;
 
 
 `

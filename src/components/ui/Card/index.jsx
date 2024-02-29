@@ -8,9 +8,9 @@ export const Card = ({text}) => {
     <S.Card>
       <S.BackgroundCard>
         <S.Tittle>
-          {text}
+          textttt
         </S.Tittle>
-        <S.ImageWrapper src={test2} width={290} height={210}/>
+        <S.ImageWrapper src={test} width={290} height={210}/>
         <S.Stacks>
           <li>Java</li>
           <li>Next</li>

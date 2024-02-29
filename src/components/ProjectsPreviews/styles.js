@@ -10,10 +10,13 @@ export const Text = styled.p`
 
 export const Projects = styled.section`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   min-height: 25.625rem;
+  gap: 3rem;
   background-color: ${({theme}) => theme.colors.primary200};
   z-index: 1;
 
@@ -23,9 +26,8 @@ export const ProjectsWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.1rem 0;
-  gap: 3rem;
-  width: 26rem;
+  width: 25rem;
+  gap: 2.5rem;
 `
 
 export const StyledSlider = styled(Slider)`

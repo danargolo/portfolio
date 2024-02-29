@@ -11,6 +11,10 @@ export const Text = styled.p`
 export const Tab = styled.div`
   width: 100%;
   margin: 1.25rem;
+
+  @media (min-width: 769px) {
+    width: 35%;
+  }
   
 `
 
@@ -41,34 +45,43 @@ export const ItemTab = styled.div`
   border: none;
   height: 100%;
   width: 100%;
-  border-bottom: ${({ $active }) => (!$active ? '1px solid black' : 'none')};
   border-radius: .75rem .75rem 0 0;
   background-color: ${({ $active, theme }) =>
-    $active ? theme.colors.accent200op : theme.colors.bg300};
+    $active ? theme.colors.primary100 : theme.colors.bg300}; //background degrade?
 
-    ${({ $active }) => {
+    /* ${({ $active }) => {
       if($active) {
         return css`
-          border-left: .0625rem solid black;
-          border-right: .0625rem solid black;
-          border-top: .0625rem solid black;
       `
         }
-      }}
+    }} */
     
   &:hover {
     cursor: pointer;
-    background-color: ${({theme}) => theme.colors.accent200op};
   }
 `
 
 export const Content = styled.div`
-  display: ${({$active}) => $active ? 'block' : 'none'};
+  display: ${({$active}) => $active ? 'grid' : 'none'};
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(3, 60px);
+  max-width: 100%;
   height: 15.625rem;
-  background-color: ${({theme}) => theme.colors.accent200op};
-  border-left: .0625rem solid black;
-  border-right: .0625rem solid black;
-  border-bottom: .0625rem solid black;
+  justify-content: space-around;
+  align-content: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: ${ ({theme}) => theme.colors.primary100 };
+  /* background: ${({theme}) => theme.colors.degrade}; */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 0 0 .75rem .75rem;
+`
+
+export const Item = styled.div`
+  border: 1px solid black;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
 `
 

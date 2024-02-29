@@ -1,3 +1,4 @@
+import { Hr } from '../ui/Hr';
 import { Tab } from '../ui/Tab';
 import * as S from './styles'
 
@@ -7,13 +8,14 @@ export const About = () => {
   return (
     <S.About id="about">
       <S.Text>Sobre</S.Text>
-      <div>
-        <S.SentenceText>Apaixonado por codificar desejos.</S.SentenceText>
-        <S.AboutWrapper>         
+      <S.AboutWrapper>
+        <S.ContainerText>         
+          <S.AboutSentence>Apaixonado por codificar desejos.</S.AboutSentence>
           <S.AboutText>{text}</S.AboutText>
-          <Tab />
-        </S.AboutWrapper>
-      </div>
+        </S.ContainerText>
+        <Tab />
+      </S.AboutWrapper>
+      <Hr />
     </S.About>
   );
 };

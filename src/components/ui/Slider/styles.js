@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
   @media (min-width: 769px) {
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(2, 420px);
+    grid-template-rows: auto;
     width: 85%;
     height: fit-content;
     justify-content: center;

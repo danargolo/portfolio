@@ -18,7 +18,7 @@ export const Projects = styled.section`
   width: 100vw;
   min-height: 25.625rem;
   gap: 3rem;
-  background-color: ${({theme}) => theme.colors.primary200};
+  background-color: ${({theme}) => theme.colors.bg100};
   z-index: 1;
 
 `
@@ -38,11 +38,14 @@ export const StyledSlider = styled(Slider)`
     
     
     &>:nth-child(1) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       width: 65.625rem;
+      border: 2px solid red;
       z-index: 0;
     }
     &>:nth-child(2) {
-      /* display: none; */
+      display: none;
     }
 
     

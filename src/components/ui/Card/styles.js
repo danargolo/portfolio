@@ -4,6 +4,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 const Text = styled.p`
+  font-size: clamp(1rem, 2vw, 1.025rem);
   color: ${({theme}) => theme.colors.text100};
   padding: 5px;
 `
@@ -12,10 +13,10 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20.7rem;
-  height: 28rem;
+  width: 18.7rem;
+  height: 26rem;
   border-radius: 12px;
-  background-color: ${({theme}) => theme.colors.bg100};
+  background-color: ${({theme}) => theme.colors.bg200};
   /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   scroll-snap-align: center;
@@ -59,7 +60,6 @@ export const Tittle = styled(Text)`
   background-color: ${({theme}) => theme.colors.accent200op};
   border-radius: 5px;
   text-transform: capitalize;
-  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.2px;
 `
@@ -87,7 +87,7 @@ export const Description = styled(Text)`
   height: 100px;
   max-height: 100px;
   margin-top: 10px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   background-color: ${({theme}) => theme.colors.accent200op};
   border-radius: 5px;
   overflow-wrap: break-word;

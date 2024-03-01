@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import * as S from './styles';
+import { Card } from "../Card";
 
 export const Slider = ({ Component, data, className }) => {
   const wrapperRef = useRef(null);
@@ -44,10 +45,10 @@ export const Slider = ({ Component, data, className }) => {
   }, []);
 
   return (
-    <S.Slider className={className}>
+    <>
       <S.Wrapper ref={wrapperRef}>
           {data.map((item, index) => (
-            <Component key={index} {...item} />
+            <Card key={index} {...item} />
           ))}
       </S.Wrapper>
       <S.IndicatorWrapper>
@@ -59,6 +60,6 @@ export const Slider = ({ Component, data, className }) => {
           />
         ))}
       </S.IndicatorWrapper>
-    </S.Slider>
+    </>
   )
 }

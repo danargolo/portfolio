@@ -9,6 +9,7 @@ export const Slider = styled.div`
   align-items: center;
   /* min-height: 25.625rem;
   background-color: ${({theme}) => theme.colors.primary200}; */
+  z-index: 1;
 
 `
 
@@ -19,17 +20,34 @@ export const Wrapper = styled.div`
   height: 30.9375rem;
   /* margin-left: 0.9rem; */
   /* padding: 10px; */
-  gap: 1.7rem;
+  gap: 2.7rem;
   overflow-x: auto;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
 
   & > :first-child {
-    margin-left: 1.5rem;
+    margin-left: 2.2rem;
   }
 
   & > :last-child {
-    margin-right: 1.5rem;
+    margin-right: 2.2rem;
+  }
+
+  @media (min-width: 769px) {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 420px);
+    width: 85%;
+    height: fit-content;
+    justify-content: center;
+
+    & > :first-child {
+      margin-left: 0;
+    }
+
+    & > :last-child {
+      margin-right: 0;
+    }
   }
 `
 
@@ -39,6 +57,10 @@ export const IndicatorWrapper = styled.div`
   width: 65%;
   gap: 12px;
   z-index: 1;
+  
+  @media (min-width: 769px) {
+    display: none;
+  }
 
 `
 export const Indicator = styled.div`

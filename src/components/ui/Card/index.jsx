@@ -10,7 +10,7 @@ export const Card = ({text}) => {
         <S.Tittle>
           textttt
         </S.Tittle>
-        <S.ImageWrapper src={test} width={290} height={210}/>
+        <S.ImageWrapper src={test} width={260} height={180}/>
         <S.Stacks>
           <li>Java</li>
           <li>Next</li>

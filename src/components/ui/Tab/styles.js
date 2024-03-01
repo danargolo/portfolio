@@ -26,7 +26,7 @@ export const Menu = styled.ul`
     width: 40%;
     list-style: none;
 
-    & > button {
+    li > button {
       padding: 6px 4px;
       text-decoration: none;
       background: none;
@@ -34,6 +34,10 @@ export const Menu = styled.ul`
       height: 100%;
       width: 100%;
       border-radius: .75rem .75rem 0 0;
+    }
+
+    &:last-child {
+      width: 20%;
     }
   }
 `

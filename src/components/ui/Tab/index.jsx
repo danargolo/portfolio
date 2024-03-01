@@ -8,7 +8,8 @@ const tab = ["Linguagens", "Frameworks", "Ferramentas"]
 const categorias = {
   Linguagens: ["JavaScript", "TypeScript", "Java", "Python"],
   Frameworks: ["React", "Angular", "Vue"],
-  Ferramentas: ["VS Code", "Git", "Docker"]
+  Ferramentas: ["VS Code", "Git", "Docker"],
+  ['+']: ["Team Work"]
 };
 
 export const Tab = () => {

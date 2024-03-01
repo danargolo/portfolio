@@ -4,10 +4,10 @@ import * as S from './styles'
 import linkedin from "../../../public/icons/linkedin.png"
 import github from "../../../public/icons/github.png"
 import { Button } from '../ui/Button'
+import { Hr } from '../ui/Hr'
 
 export const Hero = () => {
   return(
-
     <S.Hero>
       <S.HeroWrapper>
         <S.TextContainer>

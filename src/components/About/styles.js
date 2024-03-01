@@ -17,7 +17,7 @@ export const About = styled.section`
   width: 100vw;
   height: fit-content;
   gap: 3rem;
-  background-color: ${({theme}) => theme.colors.primary200};  
+  background-color: ${({theme}) => theme.colors.bg100};  
   position: relative;
   z-index: 1;
 

@@ -13,6 +13,7 @@ export const Hero = styled.section`
   min-height: 25.625rem;
   background-color: ${({theme}) => theme.colors.bg100};
   width: 100vw;
+  z-index: 1;
 
 `
 

@@ -14,12 +14,13 @@ export const Hero = () => {
           <S.NameText>Olá, sou Danilo Argolo</S.NameText>
           <S.RoleText>Desenvolvedor Front-end</S.RoleText>
         </S.TextContainer>
+        <Button text="Download CV"/>
         <S.IconsContainer>
           <Icon width={36} heigth={36} alt="Icon Linkedin" src={linkedin}/>
           <Icon width={36} heigth={36} alt="Icon GitHub" src={github}/>
-          <Button text="Download CV"/>
         </S.IconsContainer>
       </S.HeroWrapper>
+      <Hr />
     </S.Hero>
   )
 }

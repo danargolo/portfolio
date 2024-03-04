@@ -1,12 +1,15 @@
 "use client"
 
 import styled from "styled-components"
+import Image from "next/image"
 
 export const Text = styled.p`
   margin-top: 2.5rem;
   display: flex;
   font-size: 26px;
   color: ${({ theme }) => theme.colors.text100 };
+`
+export const ImageWrapper = styled(Image)`
 `
 
 export const About = styled.section`

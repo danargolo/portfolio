@@ -32,6 +32,7 @@ export const ProjectsWrapper = styled.div`
 `
 
 export const StyledSlider = styled(Slider)`
+
   /* @media (min-width: ${({theme}) => theme.breakpoints.md}) { */
   @media (min-width: 769px) {
     width: 65.625rem;

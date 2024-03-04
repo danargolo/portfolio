@@ -20,4 +20,8 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
   }
 
+  p {
+    color: ${({ theme }) => theme.colors.text100 };
+  }
+
 `

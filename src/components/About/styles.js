@@ -18,6 +18,7 @@ export const About = styled.section`
   justify-content: center;
   align-items: center;
   width: 100vw;
+  min-height: 25.625rem;
   height: fit-content;
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.bg100};  

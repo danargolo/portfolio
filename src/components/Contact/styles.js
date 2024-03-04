@@ -38,4 +38,8 @@ export const StyledUl = styled(Ulist)`
   & li {
     color: ${({ theme }) => theme.colors.text100 };
   }
+
+  @media (min-width: 769px) {
+    width: 25%;
+  }
 `

@@ -15,10 +15,11 @@ export const Card = styled.div`
   justify-content: center;
   width: 18.7rem;
   height: 26rem;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   background-color: ${({theme}) => theme.colors.bg200};
+  border: 1px solid ${({theme}) => theme.colors.text100};
   /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   scroll-snap-align: center;
   /* transition: all 0.35s ease-in-out; */
 
@@ -38,11 +39,11 @@ export const BackgroundCard = styled.div`
   flex-direction: column;
   align-items: center;
   /* position: relative; */
-  width: 94%;
-  height: 96%;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  /* padding: 10px; */
   border-radius: 6px;
-  background-color:hsla(214,50%,24%,1);
+  /* background-color:hsla(214,50%,24%,1);
   background-image:
     radial-gradient(at 11% 17%, hsla(214,64%,67%,1) 0px, transparent 50%),
     radial-gradient(at 84% 80%, hsla(214,63%,67%,1) 0px, transparent 50%),
@@ -50,14 +51,26 @@ export const BackgroundCard = styled.div`
     radial-gradient(at 53% 51%, hsla(211,32%,90%,1) 0px, transparent 50%),
     radial-gradient(at 74% 27%, hsla(214,70%,33%,1) 0px, transparent 50%),
     radial-gradient(at 3% 96%, hsla(212,10%,30%,1) 0px, transparent 50%),
-    radial-gradient(at 96% 6%, hsla(212,10%,30%,1) 0px, transparent 50%);
+    radial-gradient(at 96% 6%, hsla(212,10%,30%,1) 0px, transparent 50%); */
   
-  gap: 5px;
+  /* gap: 5px; */
   /* margin: 10px; */
+`
+export const DetailsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 47%;
+  background-color: ${({theme}) => theme.colors.primary100};
+  gap: 5px;
+  /* border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 0.2px; */
 `
 export const Tittle = styled(Text)`
   width: 100%;
-  background-color: ${({theme}) => theme.colors.accent200op};
+  /* background-color: ${({theme}) => theme.colors.accent200op}; */
   border-radius: 5px;
   text-transform: capitalize;
   font-weight: 400;
@@ -66,7 +79,8 @@ export const Tittle = styled(Text)`
 export const Stacks = styled.ul`
   display: flex;
   align-self: start;
-  margin-top: 5px;
+  margin: 10px 0 0 5px;
+  color: ${({theme}) => theme.colors.text200};
   /* width: 100%; */
   /* background-color: ${({theme}) => theme.colors.accent200op}; */
   /* border: 2px solid ${({theme}) => theme.colors.bg100}; */
@@ -76,20 +90,19 @@ export const Stacks = styled.ul`
   
   & li {
     padding: 0 4px;
-    background-color: ${({theme}) => theme.colors.accent200};
+    background-color: ${({theme}) => theme.colors.accent200op};
     border-radius: 5px;
     font-size: 12px;
   }
 `
 export const Description = styled(Text)`
   width: 100%;
-  max-width: 100%;
-  height: 100px;
-  max-height: 100px;
-  margin-top: 10px;
+  height: 7.45rem;
+  /* max-height: 100px; */
+  /* margin-top: 10px; */
   /* padding-top: 10px; */
-  background-color: ${({theme}) => theme.colors.accent200op};
-  border-radius: 5px;
+  /* background-color: ${({theme}) => theme.colors.accent200op}; */
+  /* border-radius: 5px; */
   overflow-wrap: break-word;
   overflow: auto;
 
@@ -105,6 +118,18 @@ export const Description = styled(Text)`
 `
 
 export const ImageWrapper = styled(Image)`
+  @media (min-width: 769px) {
+    width: 100%;
+  }
   /* border: 2px solid red; */
-  margin: 5px 0;
+  /* margin: 5px 0; */
+`
+export const LinkWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5px;
+  gap: 10px;
+  /* border: 2px solid red; */
+  /* margin: 5px 0; */
 `

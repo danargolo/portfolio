@@ -16,7 +16,7 @@ export const Projects = () => {
     <S.Projects id="projects">
       <S.Text>Projetos</S.Text>
         <Slider data={projects}/>
-        <Button text="Ver mais" disabled/>
+        <Button text="Ver todos" disabled/>
       <Hr />
     </S.Projects>
   );

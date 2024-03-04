@@ -7,24 +7,27 @@ export const Card = ({text}) => {
   return (
     <S.Card>
       <S.BackgroundCard>
-        <S.Tittle>
-          textttt
-        </S.Tittle>
-        <S.ImageWrapper src={test} width={260} height={180}/>
-        <S.Stacks>
-          <li>Java</li>
-          <li>Next</li>
-          <li>React</li>
-          <li>React</li>
-          <li>React</li>
-        </S.Stacks>
-        <S.Description>
-          Este repositório contém um projeto de criação de 2 redes com comunicação via ICMP.
-        </S.Description>
-        <div style={{display:'flex'}}>
-          <p>github</p>
-          <p>deploy</p>
-        </div>
+        <S.ImageWrapper src={test2} width={280} height={220}/>
+
+        <S.DetailsWrapper>
+          <S.Stacks>
+            <li>Java</li>
+            <li>Next</li>
+            <li>React</li>
+            <li>React</li>
+            <li>React</li>
+          </S.Stacks>
+          <S.Tittle>
+            textttt
+          </S.Tittle>
+          <S.Description>
+            Este repositório contém um projeto de criação de 2 redes com comunicação via ICMP.
+          </S.Description>
+          <S.LinkWrapper>
+            <p>github</p>
+            <p>deploy</p>
+          </S.LinkWrapper>
+        </S.DetailsWrapper>
       </S.BackgroundCard>
     </S.Card>
   )

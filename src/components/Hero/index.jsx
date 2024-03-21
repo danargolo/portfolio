@@ -5,7 +5,7 @@ import linkedin from "../../../public/icons/linkedin.png"
 import github from "../../../public/icons/github.png"
 import { Button } from '../ui/Button'
 import { Hr } from '../ui/Hr'
-import Wave from '../ui/wave/wave'
+import Wave from '../ui/Wave/wave'
 
 
 export const Hero = () => {

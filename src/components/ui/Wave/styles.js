@@ -4,7 +4,18 @@ import styled, {keyframes} from "styled-components"
 
 const draw = keyframes`
   0% {
-    stroke-dashoffset: 2000;
+    stroke-dashoffset: 1200;
+    /* stroke-opacity: 0; */
+  }
+  100% {
+    stroke-dashoffset: 0;
+    /* transform: translate(100%, 0); */
+  }
+
+`
+const draw2 = keyframes`
+  0% {
+    stroke-dashoffset: 100;
     /* stroke-opacity: 0; */
   }
   100% {
@@ -31,17 +42,15 @@ export const svg = styled.svg`
 `
 export const g = styled.g`
   stroke-opacity: 0.35;
-  /* animation: ${draw} 14s infinite; */
-  /* animation-timing-function: linear; */
-
 `
 export const g1 = styled.g`
-  stroke-opacity: 0.25;
-  animation: ${draw} 10s linear infinite;
-  /* animation-delay: 1s; */
-  /* animation-timing-function: linear; */
-  
-
+  stroke-opacity: 1;
+  animation: ${draw} 10s linear infinite reverse;
+`
+export const g2 = styled.g`
+  stroke-dasharray: 2000;
+  stroke-opacity: 1;
+  animation: ${draw2} 10s linear infinite reverse;
 `
 
 

@@ -40,9 +40,10 @@ export const HeroWrapper = styled.div`
     }
 
   @media (min-width: 769px) {
-    width: 85%;
+    width: 65%;
     /* margin-left: 10rem; */
-    justify-content: center;    
+    justify-content: center;
+    z-index: 10;
   }
 
 

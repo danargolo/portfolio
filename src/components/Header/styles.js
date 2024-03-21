@@ -5,15 +5,16 @@ import styled from 'styled-components'
 
 export const Header = styled.header`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   min-height: 5.625rem;
   background-color: ${ ({theme}) => theme.colors.primary100 };
+  z-index: 50;
 
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
     width: 100vw;
-    z-index: 50;
   }
 ` 
 

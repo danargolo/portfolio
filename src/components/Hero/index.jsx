@@ -5,6 +5,8 @@ import linkedin from "../../../public/icons/linkedin.png"
 import github from "../../../public/icons/github.png"
 import { Button } from '../ui/Button'
 import { Hr } from '../ui/Hr'
+import Wave from '../ui/wave/wave'
+
 
 export const Hero = () => {
   return(
@@ -20,6 +22,7 @@ export const Hero = () => {
           <Icon width={36} heigth={36} alt="Icon GitHub" src={github}/>
         </S.IconsContainer>
       </S.HeroWrapper>
+      <Wave />
       <Hr />
     </S.Hero>
   )

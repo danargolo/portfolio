@@ -8,7 +8,7 @@ import { Slider } from '../ui/Slider';
 
 
 
-const projects = ['1','2','3'];
+const projects = ['1','2','3','1','2','3'];
 
 
 export const Projects = () => {

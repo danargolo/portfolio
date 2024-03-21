@@ -15,9 +15,9 @@ export const Card = styled.div`
   justify-content: center;
   width: 18.7rem;
   height: 26rem;
-  /* border-radius: 12px; */
+  border-radius: 6px;
   background-color: ${({theme}) => theme.colors.bg200};
-  border: 1px solid ${({theme}) => theme.colors.text100};
+  border: 2px solid ${({theme}) => theme.colors.text100};
   /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   scroll-snap-align: center;
@@ -41,6 +41,7 @@ export const BackgroundCard = styled.div`
   /* position: relative; */
   width: 100%;
   height: 100%;
+  
   /* padding: 10px; */
   border-radius: 6px;
   /* background-color:hsla(214,50%,24%,1);
@@ -63,6 +64,7 @@ export const DetailsWrapper = styled.div`
   height: 47%;
   background-color: ${({theme}) => theme.colors.primary100};
   gap: 5px;
+  border-radius: 6px;
   /* border-radius: 5px;
   text-transform: capitalize;
   font-weight: 400;
@@ -118,6 +120,7 @@ export const Description = styled(Text)`
 `
 
 export const ImageWrapper = styled(Image)`
+  border-radius: 2px 2px 0 0;
   @media (min-width: 769px) {
     width: 100%;
   }

@@ -10,7 +10,7 @@ export const Text = styled.p`
 
 export const Tab = styled.div`
   width: 100%;
-  margin: 2.5rem;
+  margin: 2.0rem;
 
 
   @media (min-width: 769px) {
@@ -22,6 +22,7 @@ export const Tab = styled.div`
 export const Menu = styled.ul`
   display: flex;
   gap: .2rem;
+  margin: 1rem;
   & > li {
     width: 40%;
     list-style: none;

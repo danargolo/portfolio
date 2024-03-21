@@ -15,7 +15,7 @@ export const Projects = styled.section`
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 25.625rem;
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.bg100};

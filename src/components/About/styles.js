@@ -17,7 +17,7 @@ export const About = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 25.625rem;
   height: fit-content;
   gap: 3rem;

@@ -9,19 +9,21 @@ const Text = styled.p`
 
 export const Hero = styled.section`
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 25.625rem;
   background-color: ${({theme}) => theme.colors.bg100};
-  width: 100vw;
+  /* width: 100vw; */
+  z-index: 2;
 
 `
 export const ImageWrapper = styled(Image)`
   display: flex;
   position: absolute;
   left: 0;
-  z-index: 0;
+  z-index: 2;
 `
 
 export const HeroWrapper = styled.div`
@@ -38,9 +40,10 @@ export const HeroWrapper = styled.div`
     }
 
   @media (min-width: 769px) {
-    width: 85%;
-    margin-left: 15rem;
-    justify-content: center;    
+    width: 65%;
+    /* margin-left: 10rem; */
+    justify-content: center;
+    z-index: 10;
   }
 
 

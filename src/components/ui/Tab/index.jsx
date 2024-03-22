@@ -14,11 +14,13 @@ const categorias = {
 
 export const Tab = () => {
   const [activedTab, setActivedTab] = useState(0);
+  const increment = 1;
+  const delay = 6000;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActivedTab(prevActiveTab => (prevActiveTab + 1) % 4);
-    }, 5000);
+      setActivedTab(prevActiveTab => (prevActiveTab + increment) % Object.keys(categorias).length);
+    }, delay);
     return () => clearInterval(interval);
   }, []);
   

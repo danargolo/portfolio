@@ -23,27 +23,42 @@ export const ImgWrapper = styled.div`
   width: 80%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10.0rem 0 5.5625rem;
-  z-index: 99;
+  margin: 0 1.1rem 0 0.0625rem;
+  /* border: 2px solid blue; */
 
   & img {
     left: 3.75rem;
   }
 
   & button {
+    display: flex;
+    right: 3.75rem; ;
+    z-index: 99;
+  }
+  
+  @media (min-width: 769px) { 
+    width: 40%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: 0 14.0rem 0 16.5625rem;
+    z-index: 99;
+
+    & button {
       display: none;
     }
+  }
 
-    @media (max-width: ${({theme}) => theme.breakpoints.md}) {
-      margin: 0 1.1rem 0 0.0625rem;
-
-      & button {
-        display: flex;
-        right: 3.75rem; ;
-        z-index: 99;
-        
-      }
+  /* @media (max-width: ${({theme}) => theme.breakpoints.md}) {
+    margin: 0 1.1rem 0 0.0625rem;
+    border: 2px solid blue;
+    width: 80%;
+    & button {
+      display: flex;
+      right: 3.75rem; ;
+      z-index: 99;
+      
     }
+  } */
 `
 
 export const MenuWrapper = styled.nav`

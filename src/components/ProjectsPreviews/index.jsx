@@ -1,9 +1,9 @@
 "use client"
 
 import * as S from './styles'
-import { Button } from '../ui/Button';
 import { Hr } from '../ui/Hr';
 import { Slider } from '../ui/Slider';
+import { Anchor } from '../ui/Anchor';
 
 
 
@@ -16,7 +16,7 @@ export const Projects = () => {
     <S.Projects id="projects">
       <S.Text>Projetos</S.Text>
         <Slider data={projects}/>
-        <Button text="Ver todos" disabled/>
+        <Anchor text="Ver todos" disabled/>
       <Hr />
     </S.Projects>
   );

@@ -35,6 +35,7 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 1rem ;
+  gap: 4rem;
 
   @media (min-width: 769px) {
     flex-direction: row;
@@ -59,6 +60,11 @@ export const ContainerText = styled.div`
     /* justify-content: right; */
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    width: 22rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
   }
 `
 
@@ -87,5 +93,9 @@ export const AboutText = styled.p`
     height: 360px;
     text-align: left;
   }
+
+  /* @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    font-size: clamp(0.9rem, 2.5vw, 1.10rem);
+  } */
 `
 

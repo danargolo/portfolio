@@ -17,7 +17,7 @@ export const Card = styled.div`
   height: 26rem;
   border-radius: 6px;
   background-color: ${({theme}) => theme.colors.bg200};
-  border: 2px solid ${({theme}) => theme.colors.text100};
+  border: 3px solid ${({theme}) => theme.colors.bg300 };
   /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   scroll-snap-align: center;

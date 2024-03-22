@@ -29,7 +29,7 @@ export const ImageWrapper = styled(Image)`
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: center; */
   margin-top: 4rem;
   padding: 10.9375rem 0;
   gap: 3rem;
@@ -43,7 +43,13 @@ export const HeroWrapper = styled.div`
     width: 65%;
     /* margin-left: 10rem; */
     justify-content: center;
+    align-items: center;
     z-index: 10;
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    width: 20rem;
+    /* font-size: clamp(0.9rem, 2vw, 1rem); */
   }
 
 
@@ -52,6 +58,7 @@ export const HeroWrapper = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* padding: 0.9rem; */
   gap: 1.25rem;
 
@@ -67,9 +74,33 @@ export const TextContainer = styled.div`
 export const IconsContainer = styled.div`
   display: flex;
   gap: 1.25rem;
-  width: 40%;
+  /* width: 40%; */
   align-items: center;
+  justify-content: center;
+  
+  @media (min-width: 769px) {
+    width: 85%;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 4.5625rem;
+    /* padding: 0; */
+    
+  }
+`
+export const AnchorContainer = styled.div`
+  display: flex;
+  gap: 1.25rem;
+  /* width: 40%; */
+  align-items: center;
+  justify-content: center;
   /* margin-left: 1.5625rem; */
+  @media (min-width: 769px) {
+    width: 85%;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0;
+    
+  }
 `
 
 export const NameText = styled(Text)`

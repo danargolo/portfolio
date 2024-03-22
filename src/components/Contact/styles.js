@@ -28,6 +28,9 @@ export const Contact = styled.section`
   }
 `
 export const  ContactWrapper = styled.div`
+  & > p{
+    font-size: clamp(1rem, 3vw, 1.125rem);
+  }
 `
 
 export const StyledUl = styled(Ulist)`

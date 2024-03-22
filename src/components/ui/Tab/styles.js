@@ -16,6 +16,11 @@ export const Tab = styled.div`
   @media (min-width: 769px) {
     width: 35%;
   }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    width: 100vw;
+    margin: 0;
+  }
   
 `
 
@@ -27,7 +32,8 @@ export const Menu = styled.ul`
     width: 40%;
     list-style: none;
 
-    li > button {
+
+    /* li > button {
       padding: 6px 4px;
       text-decoration: none;
       background: none;
@@ -35,12 +41,28 @@ export const Menu = styled.ul`
       height: 100%;
       width: 100%;
       border-radius: .75rem .75rem 0 0;
-    }
+    } */
 
     &:last-child {
       width: 20%;
     }
   }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+
+    & > li {
+      width: 25%;
+    }
+
+    & > li:last-child {
+      width: 10%;
+    }
+  }
+
+
 `
 
 export const ItemTab = styled.div`
@@ -65,6 +87,11 @@ export const ItemTab = styled.div`
     
   &:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    /* width: 80%; */
+    font-size: clamp(0.9rem, 2vw, 1rem);
   }
 `
 

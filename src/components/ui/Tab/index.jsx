@@ -15,9 +15,12 @@ const categorias = {
 export const Tab = () => {
   const [activedTab, setActivedTab] = useState(0);
 
-  // useEffect(() => {
-  //   Object.entries(categorias).map((item, i) => console.log(item))
-  // }, [])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActivedTab(prevActiveTab => (prevActiveTab + 1) % 4);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
   
 
   const handleClick = (index) => {

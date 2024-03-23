@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
-  hr {
+  /* hr {
     height: 0.225rem;
     background-image: linear-gradient( 45deg,
       ${({theme}) => theme.colors.primary100 } 0%, 
@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
       ${({theme}) => theme.colors.primary100 } 100%
     );
     border: none;
-  }
+  } */
 
   p {
     color: ${({ theme }) => theme.colors.text100 };

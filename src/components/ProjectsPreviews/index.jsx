@@ -14,10 +14,10 @@ const projects = ['1','2','3','1','2','3'];
 export const Projects = () => {
   return (
     <S.Projects id="projects">
-      <S.Text>Projetos</S.Text>
+      <S.Text>Seleção dos projetos desenvolvidos por mim.</S.Text>
         <Slider data={projects}/>
         <Anchor text="Ver todos" disabled/>
-      <Hr />
+      <Hr text="Sobre" $reverse="reverse"/>
     </S.Projects>
   );
 };

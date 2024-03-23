@@ -29,7 +29,7 @@ export const Hero = () => {
         </S.IconsContainer>
       </S.HeroWrapper>
       <Wave />
-      <Hr />
+      <Hr text="Projetos"/>
     </S.Hero>
   )
 }

@@ -1,7 +1,9 @@
 import * as S from './styles'
 
-export const Hr = () => {
+export const Hr = ({text, ...rest}) => {
   return (
-    <S.Hr />
+    <S.Hr data-content={text} {...rest}>
+      <span></span>
+    </S.Hr>
   )
 }

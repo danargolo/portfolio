@@ -9,7 +9,7 @@ import { Ulist } from '../ui/Ulist'
 import { HamburgerBtn } from '../ui/HamburgerButton'
 import { useDataContext } from '@/context'
 
-const menu = [ 'Projetos', 'Sobre', 'Contato' ]
+const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'} ]
 
 export const Header= () => {
   const { isToggle, setIsToggle } = useDataContext();
@@ -33,7 +33,7 @@ export const Header= () => {
         <HamburgerBtn />
       </S.ImgWrapper>
       <S.MenuWrapper $active={isToggle}>
-        <Ulist itens={ menu } />
+        <S.StyledUlist itens={ menu } />
       </S.MenuWrapper>
     </S.Header>
   )

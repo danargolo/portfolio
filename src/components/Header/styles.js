@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import styled from 'styled-components'
+import { Ulist } from '../ui/Ulist'
 
 export const Header = styled.header`
   display: flex;
@@ -109,8 +109,11 @@ export const MenuWrapper = styled.nav`
 
 `
 
-export const Logo = styled(Image)`
-  
+export const StyledUlist = styled(Ulist)`
+  & > li > a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.text100 };
+  }
 `
 
 

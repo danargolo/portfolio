@@ -1,9 +1,9 @@
 "use client"
 
-import { Ulist } from '../ui/Ulist';
+// import { Ulist } from '../ui/Ulist';
 import * as S from './styles';
 
-const infos = ['Linkedin', 'Email', 'GitHub', 'Telegram']
+const infos = [ {name: 'Linkedin'}, {name: 'Email'}, {name: 'GitHub'}, {name: 'Telegram'} ]
 
 
 export const Contact = () => {

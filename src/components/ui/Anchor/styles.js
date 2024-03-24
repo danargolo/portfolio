@@ -1,9 +1,13 @@
 "use client"
 
-import Link from "next/link"
+import ScrollLink from "@/utils/link"
 import styled from "styled-components"
 
-export const Anchor = styled(Link)`
+export const StyledScrollLink = styled(ScrollLink)`
+  text-decoration: none;
+`
+
+export const Anchor = styled.span`
   background-image: linear-gradient( 45deg,
     ${({theme}) => theme.colors.primary100 } 0%, 
     ${({theme}) => theme.colors.bg200 } 51%, 
@@ -21,6 +25,7 @@ export const Anchor = styled(Link)`
   border: 2px solid ${({theme}) => theme.colors.bg300 };
   border-radius: 6px;
   display: block;
+  
 
   &:hover {
     background-position: right center;

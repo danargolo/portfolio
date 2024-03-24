@@ -1,13 +1,17 @@
+"use client"
+
+import ScrollLink from '@/utils/link'
 import * as S from './styles'
 
 export const Anchor = ({ text, path = "", target, className }) => {
   return (
-    <S.Anchor 
+    <S.StyledScrollLink 
       href={path} 
       target={target}
-      className={className}
     >
-      {text}
-    </S.Anchor>
+      <S.Anchor className={className}>
+        {text}
+      </S.Anchor>
+    </S.StyledScrollLink>
   )
 }

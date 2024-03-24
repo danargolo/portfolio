@@ -2,6 +2,7 @@
 
 import styled from 'styled-components'
 import { Ulist } from '../ui/Ulist'
+import ScrollLink from '@/utils/link'
 
 export const Header = styled.header`
   display: flex;
@@ -114,6 +115,10 @@ export const StyledUlist = styled(Ulist)`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.text100 };
   }
+`
+
+export const StyledScrollLink = styled(ScrollLink)`
+  width: 0;
 `
 
 

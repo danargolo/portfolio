@@ -11,6 +11,7 @@ export const About = () => {
 
   return (
     <S.About id="about">
+      <Hr text="Sobre" $reverse="reverse"/>
       {/* <S.Text>Sobre</S.Text> */}
       <S.AboutWrapper>
         <S.ContainerText>         
@@ -19,7 +20,6 @@ export const About = () => {
         </S.ContainerText>
         <Tab />
       </S.AboutWrapper>
-      <Hr text="Contato" />
     </S.About>
   );
 };

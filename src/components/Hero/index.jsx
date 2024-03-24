@@ -32,7 +32,6 @@ export const Hero = () => {
         </S.IconsContainer> */}
       </S.HeroWrapper>
       <Wave />
-      <Hr text="Projetos"/>
     </S.Hero>
   )
 }

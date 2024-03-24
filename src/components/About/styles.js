@@ -20,8 +20,9 @@ export const About = styled.section`
   /* width: 100vw; */
   min-height: 25.625rem;
   height: fit-content;
-  padding-top: 5rem;
-  gap: 3rem;
+  padding-bottom: 5rem;
+  /* padding-top: 5rem; */
+  /* gap: 3rem; */
   background-color: ${({theme}) => theme.colors.bg100};  
   position: relative;
   z-index: 1;
@@ -31,11 +32,11 @@ export const About = styled.section`
   }
 `
 
-export const AboutWrapper = styled.div`
+export const AboutWrapper = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding-bottom: 1rem ; */
+  padding-top: 5rem;
   gap: 4rem;
 
   @media (min-width: 769px) {

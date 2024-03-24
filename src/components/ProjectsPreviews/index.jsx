@@ -14,10 +14,12 @@ const projects = ['1','2','3','1','2','3'];
 export const Projects = () => {
   return (
     <S.Projects id="projects">
+      <Hr text="Projetos"/>
       <S.Text>Alguns dos meus projetos.</S.Text>
+      <S.ProjectsWrapper>
         <Slider data={projects}/>
         <S.StyledAnchor text="Ver todos" disabled/>
-      <Hr text="Sobre" $reverse="reverse"/>
+      </S.ProjectsWrapper>
     </S.Projects>
   );
 };

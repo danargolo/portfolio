@@ -15,9 +15,9 @@ export const Contact = styled.section`
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   /* width: 100vw; */
-  min-height: 25.625rem;
+  min-height: 30.625rem;
   /* height: fit-content; */
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.bg100};  
@@ -28,14 +28,24 @@ export const Contact = styled.section`
     margin: 20px;
   }
 `
-export const  ContactWrapper = styled.div`
+export const  ContactWrapper = styled.article`
   width: 85%;
   & > p{
     font-size: clamp(1rem, 3vw, 1.125rem);
+    color: ${({theme}) => theme.colors.text200};
+    line-height: 1.5rem;
+    text-align: justify;
   }
 
   @media (min-width: 769px) {
     width: 50%;
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+
+    & > p{
+      font-size: clamp(0.9rem, 2vw, 1rem);
+  }
   }
 `
 

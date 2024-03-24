@@ -8,6 +8,7 @@ import logo from '/public/logo.svg'
 import { Ulist } from '../ui/Ulist'
 import { HamburgerBtn } from '../ui/HamburgerButton'
 import { useDataContext } from '@/context'
+import ScrollLink from '@/utils/link'
 
 const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'} ]
 
@@ -29,7 +30,9 @@ export const Header= () => {
   return(
     <S.Header id='header'>
       <S.ImgWrapper>
-        <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority/>
+        <S.StyledScrollLink href='#header'>
+          <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority draggable='false'/>
+        </S.StyledScrollLink>
         <HamburgerBtn />
       </S.ImgWrapper>
       <S.MenuWrapper $active={isToggle}>

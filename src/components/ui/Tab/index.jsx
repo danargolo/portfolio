@@ -6,16 +6,16 @@ import * as S from './styles';
 const tab = ["Linguagens", "Frameworks", "Ferramentas"]
 
 const categorias = {
-  Linguagens: ["JavaScript", "TypeScript", "Java", "Python"],
-  Frameworks: ["React", "Angular", "Vue"],
-  Ferramentas: ["VS Code", "Git", "Docker"],
+  Linguagens: ["JavaScript", "TypeScript", "Java", "Python","JavaScript", "TypeScript", "Java", "Python"],
+  Frameworks: ["React", "Angular", "Vue","JavaScript", "TypeScript", "Java", "Python"],
+  Ferramentas: ["VS Code", "Git", "Docker","JavaScript", "TypeScript", "Java", "Python","JavaScript", "TypeScript", "Java", "Python",],
   ['+']: ["Team Work"]
 };
 
 export const Tab = () => {
   const [activedTab, setActivedTab] = useState(0);
   const increment = 1;
-  const delay = 6000;
+  const delay = 8000;
 
   useEffect(() => {
     const interval = setInterval(() => {

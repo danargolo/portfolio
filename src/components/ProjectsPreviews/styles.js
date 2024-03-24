@@ -2,11 +2,17 @@
 
 import styled from "styled-components"
 import { Slider } from "../ui/Slider"
+import { Anchor } from "../ui/Anchor"
 
 export const Text = styled.p`
-  margin-top: 2.5rem;
-  font-size: 26px;
-  color: ${({ theme }) => theme.colors.text100 };
+  font-size: clamp(1.032rem, 2vw, 1.125rem);
+  font-weight: 700;
+  text-align: center;
+  color: ${({theme}) => theme.colors.text200};
+
+  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+    width: 80%;
+  }
 `
 
 export const Projects = styled.section`
@@ -17,7 +23,8 @@ export const Projects = styled.section`
   align-items: center;
   /* width: 100vw; */
   min-height: 25.625rem;
-  gap: 3rem;
+  padding-top: 5rem;
+  /* gap: 3rem; */
   background-color: ${({theme}) => theme.colors.bg100};
   z-index: 1;
 
@@ -48,7 +55,10 @@ export const StyledSlider = styled(Slider)`
     &>:nth-child(2) {
       display: none;
     }
-
-    
   }
+`
+
+export const StyledAnchor = styled(Anchor)`
+  margin: 3rem;
+  
 `

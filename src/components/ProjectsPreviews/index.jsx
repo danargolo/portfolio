@@ -14,9 +14,9 @@ const projects = ['1','2','3','1','2','3'];
 export const Projects = () => {
   return (
     <S.Projects id="projects">
-      <S.Text>Seleção dos projetos desenvolvidos por mim.</S.Text>
+      <S.Text>Alguns dos meus projetos.</S.Text>
         <Slider data={projects}/>
-        <Anchor text="Ver todos" disabled/>
+        <S.StyledAnchor text="Ver todos" disabled/>
       <Hr text="Sobre" $reverse="reverse"/>
     </S.Projects>
   );

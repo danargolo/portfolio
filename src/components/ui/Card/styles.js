@@ -64,7 +64,9 @@ export const DetailsWrapper = styled.div`
   height: 47%;
   background-color: ${({theme}) => theme.colors.primary100};
   gap: 5px;
-  border-radius: 6px;
+  border-radius: 0px 0px 3px 3px;
+  /* border: 2px solid red; */
+
   /* border-radius: 5px;
   text-transform: capitalize;
   font-weight: 400;
@@ -120,7 +122,7 @@ export const Description = styled(Text)`
 `
 
 export const ImageWrapper = styled(Image)`
-  border-radius: 2px 2px 0 0;
+  border-radius: 3px 3px 0 0;
   @media (min-width: 769px) {
     width: 100%;
   }

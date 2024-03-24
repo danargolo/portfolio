@@ -4,7 +4,7 @@ import styled, {keyframes} from "styled-components"
 
 const draw = keyframes`
   0% {
-    stroke-dashoffset: 1350;
+    stroke-dashoffset: 1300;
     /* stroke-opacity: 0; */
   }
   100% {

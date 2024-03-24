@@ -37,7 +37,7 @@ export const ImgWrapper = styled.div`
   }
   
   @media (min-width: 769px) { 
-    width: 40%;
+    width: 50%;
     /* justify-content: space-between; */
     /* align-items: center; */
     margin: 0 14.0rem 0 16.5625rem;

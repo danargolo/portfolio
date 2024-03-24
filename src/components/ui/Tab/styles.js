@@ -9,25 +9,30 @@ export const Text = styled.p`
 `
 
 export const Tab = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin: 2.0rem;
+  /* margin: 2.0rem; */
+  /* text-align: -webkit-center; */
 
 
   @media (min-width: 769px) {
     width: 35%;
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
+  /* @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
     width: 100vw;
     margin: 0;
-  }
+  } */
   
 `
 
 export const Menu = styled.ul`
   display: flex;
+  width: 100%;
   gap: .2rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   & > li {
     width: 40%;
     list-style: none;
@@ -50,11 +55,11 @@ export const Menu = styled.ul`
 
   @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
     justify-content: center;
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0;
 
     & > li {
-      width: 25%;
+      width: 30%;
     }
 
     & > li:last-child {
@@ -97,9 +102,9 @@ export const ItemTab = styled.div`
 
 export const Content = styled.div`
   display: ${({$active}) => $active ? 'grid' : 'none'};
-  grid-template-columns: repeat(4, 60px);
-  grid-template-rows: repeat(3, 60px);
-  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* width: 100vmax; */
   height: 15.625rem;
   justify-content: space-around;
   align-content: center;
@@ -111,7 +116,11 @@ export const Content = styled.div`
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   border-radius: 0 0 .75rem .75rem;
+  width: 100%;
 
+  @media (min-width: 769px) {
+    width: 100%;
+  }
 
 `
 

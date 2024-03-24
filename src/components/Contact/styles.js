@@ -13,8 +13,9 @@ export const Text = styled.p`
 export const Contact = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  padding-top: 5rem;
   /* width: 100vw; */
   min-height: 25.625rem;
   /* height: fit-content; */
@@ -28,8 +29,13 @@ export const Contact = styled.section`
   }
 `
 export const  ContactWrapper = styled.div`
+  width: 85%;
   & > p{
     font-size: clamp(1rem, 3vw, 1.125rem);
+  }
+
+  @media (min-width: 769px) {
+    width: 50%;
   }
 `
 

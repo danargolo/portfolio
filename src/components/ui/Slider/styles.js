@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   width: 21.9rem;
-  height: 30.9375rem;
+  height: 28.9375rem;
   /* margin-left: 0.9rem; */
   /* padding: 10px; */
   gap: 2.7rem;
@@ -39,6 +39,7 @@ export const Wrapper = styled.div`
     grid-template-rows: auto;
     width: 85%;
     height: fit-content;
+    margin-top: 30px;
     justify-content: center;
 
     & > :first-child {

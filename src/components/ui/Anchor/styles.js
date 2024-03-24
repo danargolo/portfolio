@@ -10,16 +10,16 @@ export const Anchor = styled(Link)`
     ${({theme}) => theme.colors.primary100 } 100%
   );
   /* margin: 10px; */
-  padding: 15px 30px;
+  padding: 15px 18px;
   text-align: center;
   text-decoration: none;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   /* text-transform: uppercase; */
   transition: 0.5s;
   background-size: 200% auto;
   color: ${({theme}) => theme.colors.text200};
   border: 2px solid ${({theme}) => theme.colors.bg300 };
-  border-radius: 10px;
+  border-radius: 6px;
   display: block;
 
   &:hover {

@@ -14,19 +14,22 @@ const categorias = {
 
 export const Tab = () => {
   const [activedTab, setActivedTab] = useState(0);
-  const increment = 1;
-  const delay = 8000;
+  const [delay, setDelay] = useState(7000)
+  const INCREMENT = 1;
+  // let delay = 8000;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActivedTab(prevActiveTab => (prevActiveTab + increment) % Object.keys(categorias).length);
+      setActivedTab(prevActiveTab => (prevActiveTab + INCREMENT) % Object.keys(categorias).length);
     }, delay);
     return () => clearInterval(interval);
-  }, []);
+  }, [activedTab]);
   
 
   const handleClick = (index) => {
+    console.log('teste');
     setActivedTab(index)
+    setDelay(()=> 7000);
   }
 
   

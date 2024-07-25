@@ -50,7 +50,7 @@ export const DivWrapper = styled.div`
   align-items: center;
   border-radius: 3px;
   border: 2px solid ${({theme}) => theme.colors.bg300 };
-  background-color: ${({theme}) => theme.colors.primary200 };
+  background-color: ${({theme}) => theme.colors.bg200 };
   ${({ teste }) =>
     teste
       ? css`

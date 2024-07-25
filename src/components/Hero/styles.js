@@ -4,7 +4,9 @@ import styled from "styled-components"
 import Image from "next/image"
 
 const Text = styled.p`
-   color: ${({ theme }) => theme.colors.text100 };
+  margin-top: .5rem;
+  color: ${({ theme }) => theme.colors.text100 };
+  font-family: Roboto, sans-serif;
 `
 
 export const Hero = styled.section`
@@ -60,7 +62,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   /* padding: 0.9rem; */
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
 
   @media (min-width: 769px) {
     width: 85%;
@@ -103,10 +105,31 @@ export const AnchorContainer = styled.div`
   }
 `
 
+export const IntroText = styled(Text)`
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+`
 export const NameText = styled(Text)`
+  
+  /* -webkit-text-stroke: 4px #acc2ef;
+  -webkit-text-stroke-width: 1px;
+  color: rgba(1, 1, 1, 0.4); */
+  font-size: clamp(2.5rem, 10vw, 4.375rem);
+
 `
 export const RoleText = styled(Text)`
-  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  font-size: 48px;
+  color: rgba(255, 149, 0, 0.85);
+  text-align: center;
+  /* font-weight: bolder; */
+  /* -webkit-text-stroke: 4px #acc2ef;
+  -webkit-text-stroke-width: 1px;
+  color: rgba(1, 1, 1, 0.4) */
+  /* font-size: clamp(1.875rem, 3vw, 2.25rem); */
 `
 export const SentenceText = styled(Text)`
+  margin-top: 1.75rem;
+  text-align: justify;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  
+
 `

@@ -17,12 +17,14 @@ export const Hero = () => {
     <S.Hero>
       <S.HeroWrapper>
         <S.TextContainer>
-          <S.NameText>Olá, sou Danilo Argolo</S.NameText>
-          <S.RoleText>Desenvolvedor Front-end</S.RoleText>
+          <S.IntroText>Olá, eu sou</S.IntroText>
+          <S.NameText>Danilo Argolo.</S.NameText>
+          <S.RoleText>Desenvolvedor de Software</S.RoleText>
+          <S.SentenceText>E dedicado a transformar ideias em soluções tecnológicas eficientes.</S.SentenceText>
         </S.TextContainer>
         <S.AnchorContainer>
-          <Anchor text="Contato" path="#contact" target="" />
-          <Anchor text="Download CV" path={link} target="_blank" />
+          {/* <Anchor text="Contato" path="#contact" target="" /> */}
+          {/* <Anchor text="Download CV" path={link} target="_blank" /> */}
           {/* <p><ScrollLink href={link} target="_blank">{link}</ScrollLink></p>
           <p><ScrollLink href="/projects" target="_blank">"contact"</ScrollLink></p> */}
         </S.AnchorContainer>

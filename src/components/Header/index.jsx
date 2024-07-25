@@ -31,7 +31,7 @@ export const Header= () => {
     <S.Header id='header'>
       <S.ImgWrapper>
         <S.StyledScrollLink href='#header'>
-          <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority draggable='false'/>
+          <Image src={ logo } width={40} height={40} alt="Dan Argolo logo" priority draggable='false'/>
         </S.StyledScrollLink>
         <HamburgerBtn />
       </S.ImgWrapper>

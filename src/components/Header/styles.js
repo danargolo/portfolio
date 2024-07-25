@@ -9,7 +9,7 @@ export const Header = styled.header`
   position: relative;
   justify-content: center;
   align-items: center;
-  min-height: 5.625rem;
+  min-height: 4.0625rem;
   background-color: ${ ({theme}) => theme.colors.primary100 };
   z-index: 50;
 
@@ -79,12 +79,12 @@ export const MenuWrapper = styled.nav`
   @media (max-width: ${({theme}) => theme.breakpoints.md}) {
     position: fixed;
     margin: 0;
-    top: 5.6rem;
+    top: 60px;
     height: 100vh;
     width: 100vw;
     z-index: 50;
     background-color: ${ ({theme}) => theme.colors.primary100 };
-    opacity: 0.95;
+    opacity: 0.96;
     transition: transform 0.65s ease-in-out 0s;
 
     & ul {

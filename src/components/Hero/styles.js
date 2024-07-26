@@ -32,7 +32,7 @@ export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding: 10.9375rem 0;
   gap: 3rem;
   width: 25rem;
@@ -42,7 +42,10 @@ export const HeroWrapper = styled.div`
     }
 
   @media (min-width: 769px) {
+    position: relative;
     width: 65%;
+    bottom: 60px;
+    right: 20px;
     /* margin-left: 10rem; */
     justify-content: center;
     align-items: center;
@@ -65,6 +68,7 @@ export const TextContainer = styled.div`
   /* gap: 1.25rem; */
 
   @media (min-width: 769px) {
+    position: relative;
     width: 85%;
     justify-content: center;
     align-items: flex-start;

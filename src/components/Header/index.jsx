@@ -10,7 +10,8 @@ import { HamburgerBtn } from '../ui/HamburgerButton'
 import { useDataContext } from '@/context'
 import ScrollLink from '@/utils/link'
 
-const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'} ]
+const link = "https://drive.google.com/file/d/123L7C6zDkLpblmF1NYpgJ1iex8-_g3yc/view?usp=drive_link"
+const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'}, {name:'Resume', href:'https://drive.google.com/file/d/123L7C6zDkLpblmF1NYpgJ1iex8-_g3yc/view?usp=drive_link', target: '_blank'} ]
 
 export const Header= () => {
   const { isToggle, setIsToggle } = useDataContext();

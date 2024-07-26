@@ -18,7 +18,7 @@ export const Projects = () => {
       <S.Text>Alguns dos meus projetos.</S.Text>
       <S.ProjectsWrapper>
         <Slider data={projects}/>
-        <S.StyledAnchor text="Ver todos" disabled/>
+        {/* <S.StyledAnchor text="Ver todos" disabled/> */}
       </S.ProjectsWrapper>
     </S.Projects>
   );

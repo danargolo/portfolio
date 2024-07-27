@@ -19,12 +19,12 @@ export const Tab = () => {
   const INCREMENT = 1;
   // let delay = 8000;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActivedTab(prevActiveTab => (prevActiveTab + INCREMENT) % Object.keys(categorias).length);
-    }, delay);
-    return () => clearInterval(interval);
-  }, [activedTab]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActivedTab(prevActiveTab => (prevActiveTab + INCREMENT) % Object.keys(categorias).length);
+  //   }, delay);
+  //   return () => clearInterval(interval);
+  // }, [activedTab]);
   
 
   const handleClick = (index) => {
@@ -62,7 +62,9 @@ export const Tab = () => {
             {item[1].map((i, index2) => (
               <S.Item key={index2+item[0]}>
                 <Icon width={50} height={50} alt={`Icon ${i}`} src={`/icons/${i}.svg`}/>
-              </S.Item>))}
+                <S.StackName>{i}</S.StackName>
+              </S.Item>
+            ))}
           </S.Content>
         ))
       }

@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import * as S from './styles';
+import { Icon } from '../Icon';
 
 const tab = ["Linguagens", "Frameworks", "Ferramentas"]
 
 const categorias = {
-  Linguagens: ["JavaScript", "TypeScript", "Java", "Python","JavaScript", "TypeScript", "Java", "Python"],
-  Frameworks: ["React", "Angular", "Vue","JavaScript", "TypeScript", "Java", "Python"],
-  Ferramentas: ["VS Code", "Git", "Docker","JavaScript", "TypeScript", "Java", "Python","JavaScript", "TypeScript", "Java", "Python",],
+  Linguagens: ["JavaScript", "TypeScript", "Java", "Python"],
+  Frameworks: ["React", "Next"],
+  Ferramentas: ["VS Code", "Git", "Docker","AWS", "Jest"],
   ['+']: ["Team Work"]
 };
 
@@ -27,7 +28,6 @@ export const Tab = () => {
   
 
   const handleClick = (index) => {
-    console.log('teste');
     setActivedTab(index)
     setDelay(()=> 7000);
   }
@@ -59,7 +59,10 @@ export const Tab = () => {
             key={index+3}
             $active={activedTab === index}
           >
-            {item[1].map((i, index2) => (<S.Item key={index2+item[0]}>{i}</S.Item>))}
+            {item[1].map((i, index2) => (
+              <S.Item key={index2+item[0]}>
+                <Icon width={50} height={50} alt={`Icon ${i}`} src={`/icons/${i}.svg`}/>
+              </S.Item>))}
           </S.Content>
         ))
       }

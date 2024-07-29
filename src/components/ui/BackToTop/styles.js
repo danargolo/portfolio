@@ -41,7 +41,7 @@ export const DivWrapper = styled.div`
   /* display: none; */
   position: fixed;
   z-index: 99;
-  top: 92vh;
+  top: 89vh;
   right: 4vw;
   width: 40px;
   height: 40px;
@@ -51,8 +51,8 @@ export const DivWrapper = styled.div`
   border-radius: 3px;
   border: 2px solid ${({theme}) => theme.colors.bg300 };
   background-color: ${({theme}) => theme.colors.bg200 };
-  ${({ teste }) =>
-    teste
+  ${({ $teste }) =>
+    $teste
       ? css`
           animation: ${fadeIn} 600ms ease-in 1 forwards;
         `

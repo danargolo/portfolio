@@ -71,4 +71,8 @@ export const Hr = styled.div`
     z-index: 1;
   }
 
+  @media (min-width: 769px) {
+    display: none;
+  }
+
 `

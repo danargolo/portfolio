@@ -32,9 +32,9 @@ export const TopButton = ({className}) => {
   }, [scrollPosition]);
   
   return(
-    <S.DivWrapper className={className} number={2} teste={isVisible}>
+    <S.DivWrapper className={className} $teste={isVisible}>
       <S.StyledScrollLink href="#header">
-        <S.StyledImage src={chevron} width={45} heigth={45}/>
+        <S.StyledImage src={chevron} alt="back to top" width={45} heigth={45}/>
       </S.StyledScrollLink>
     </S.DivWrapper>
   )

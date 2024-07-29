@@ -1,5 +1,6 @@
 
 import { Hr } from '../ui/Hr';
+import { Tittle } from '../ui/SectionTittle';
 import { Tab } from '../ui/Tab';
 import * as S from './styles'
 
@@ -11,8 +12,8 @@ export const About = () => {
 
   return (
     <S.About id="about">
-      <Hr text="Sobre" $reverse="reverse"/>
-      {/* <S.Text>Sobre</S.Text> */}
+      {/* <Hr text="Sobre" $reverse="reverse"/> */}
+      <Tittle text='Sobre' />
       <S.AboutWrapper>
         <S.ContainerText>         
           <S.AboutSentence>Apaixonado por codificar desejos.</S.AboutSentence>

@@ -122,7 +122,8 @@ export const NameText = styled(Text)`
 `
 export const RoleText = styled(Text)`
   font-size: 48px;
-  color: rgba(255, 149, 0, 0.85);
+  color: rgba(255, 149, 0, 0.95);
+  /* color: #FFD700; */
   text-align: center;
   /* font-weight: bolder; */
   /* -webkit-text-stroke: 4px #acc2ef;

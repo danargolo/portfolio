@@ -41,8 +41,10 @@ export const DivWrapper = styled.div`
   /* display: none; */
   position: fixed;
   z-index: 99;
-  top: 89vh;
-  right: 4vw;
+  /* top: 92%; */
+  /* right: 4vw; */
+  bottom: 30px;
+  right: 45px;
   width: 40px;
   height: 40px;
   display: flex;

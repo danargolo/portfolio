@@ -10,7 +10,8 @@ import { HamburgerBtn } from '../ui/HamburgerButton'
 import { useDataContext } from '@/context'
 import ScrollLink from '@/utils/link'
 
-const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'} ]
+const link = "https://drive.google.com/file/d/123L7C6zDkLpblmF1NYpgJ1iex8-_g3yc/view?usp=drive_link"
+const menu = [ {name: 'Projetos', href:'#projects'}, {name: 'Sobre', href:'#about'}, {name: 'Contato', href:'#contact'}, {name:'Resume', href:'https://drive.google.com/file/d/123L7C6zDkLpblmF1NYpgJ1iex8-_g3yc/view?usp=drive_link', target: '_blank'} ]
 
 export const Header= () => {
   const { isToggle, setIsToggle } = useDataContext();
@@ -31,7 +32,7 @@ export const Header= () => {
     <S.Header id='header'>
       <S.ImgWrapper>
         <S.StyledScrollLink href='#header'>
-          <Image src={ logo } width={50} height={50} alt="Dan Argolo logo" priority draggable='false'/>
+          <Image src={ logo } width={40} height={40} alt="Dan Argolo logo" priority draggable='false'/>
         </S.StyledScrollLink>
         <HamburgerBtn />
       </S.ImgWrapper>

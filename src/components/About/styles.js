@@ -3,11 +3,16 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-export const Text = styled.p`
-  margin-top: 2.5rem;
+export const Tittle = styled.p`
+  margin-top: 5rem;
   display: flex;
   font-size: 26px;
   color: ${({ theme }) => theme.colors.text100 };
+  
+  @media (min-width: 769px) {
+    margin-top: 3rem;
+    
+  }
 `
 export const ImageWrapper = styled(Image)`
 `
@@ -23,7 +28,8 @@ export const About = styled.section`
   padding-bottom: 5rem;
   /* padding-top: 5rem; */
   /* gap: 3rem; */
-  background-color: ${({theme}) => theme.colors.bg100};  
+  background-color: ${({theme}) => theme.colors.primary100};
+  /* background-color: black; */
   position: relative;
   z-index: 1;
 

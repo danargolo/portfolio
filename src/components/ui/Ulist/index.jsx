@@ -2,14 +2,13 @@ import ScrollLink from '@/utils/link';
 import * as S from './styles'
 
 export const Ulist = ({  itens, className, ...rest}) => {
-  console.log(itens)
   return (
     <S.Ulist className={className}>
-      { itens.map(({name, href}, index) => (
+      { itens.map(({name, ...props}, index) => (
           <li key={name+index}>
-            { href
+            { props.href
               ? (
-                  <ScrollLink href={href}>
+                  <ScrollLink {...props}>
                     {name}
                   </ScrollLink>
                 )

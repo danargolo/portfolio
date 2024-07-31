@@ -32,6 +32,7 @@ export const Menu = styled.ul`
   display: flex;
   width: 100%;
   gap: .2rem;
+  padding-bottom: 15px;
   /* margin: 1rem; */
   & > li {
     width: 40%;
@@ -108,7 +109,7 @@ export const Content = styled.div`
   height: 15.625rem;
   justify-content: space-around;
   align-content: center;
-  gap: 15px;
+  gap: 20px;
   padding: 10px;
   color: ${({theme}) => theme.colors.text200};
   /* background-color: ${ ({theme}) => theme.colors.primary100 }; */
@@ -120,14 +121,37 @@ export const Content = styled.div`
 
   @media (min-width: 769px) {
     width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    gap: 20px;
   }
 
 `
 
-export const Item = styled.div`
-  border: 1px solid black;
-  padding: 10px;
-  width: 60px;
-  height: 60px;
+export const Item = styled.figure`
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto 1fr;
+  /* border: 1px solid black; */
+  /* padding: 10px; */
+  width: 70px;
+  height: 70px;
+`
+
+export const StackName = styled.p`
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  width: 70px;
+  justify-content: center;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+
+  ${Item}:hover &{
+    display: flex;
+    padding-top: 10px;
+    visibility: visible;
+    opacity: 1;
+  }
+
 `
 

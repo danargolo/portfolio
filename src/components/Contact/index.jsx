@@ -1,7 +1,7 @@
 "use client"
 
 import { Hr } from '../ui/Hr';
-import { Tittle } from '../ui/SectionTittle';
+import { SectionTittle } from '../ui/SectionTittle';
 // import { Ulist } from '../ui/Ulist';
 import * as S from './styles';
 
@@ -11,7 +11,7 @@ const infos = [ {name: 'Linkedin'}, {name: 'Email'}, {name: 'GitHub'}, {name: 'T
 export const Contact = () => {
   return (
     <S.Contact id="contact">
-      <Tittle text="Contato" />
+      <SectionTittle text="Contato" />
       {/* <Hr text="Contato" /> */}
       {/* <S.Text>Contato</S.Text> */}
       <S.ContactWrapper>

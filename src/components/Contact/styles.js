@@ -18,6 +18,7 @@ export const Contact = styled.section`
   /* padding-top: 5rem; */
   /* width: 100vw; */
   min-height: 30.625rem;
+  height: 90vh;
   /* height: fit-content; */
   gap: 3rem;
   background-color: ${({theme}) => theme.colors.bg100};  

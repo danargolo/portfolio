@@ -22,12 +22,12 @@ export const Hero = () => {
           <S.RoleText>Desenvolvedor de Software</S.RoleText>
           <S.SentenceText>E dedicado a transformar ideias em soluções tecnológicas eficientes.</S.SentenceText>
         </S.TextContainer>
-        <S.AnchorContainer>
+        {/* <S.AnchorContainer> */}
           {/* <Anchor text="Contato" path="#contact" target="" /> */}
           {/* <Anchor text="Download CV" path={link} target="_blank" /> */}
           {/* <p><ScrollLink href={link} target="_blank">{link}</ScrollLink></p>
           <p><ScrollLink href="/projects" target="_blank">"contact"</ScrollLink></p> */}
-        </S.AnchorContainer>
+        {/* </S.AnchorContainer> */}
         {/* <S.IconsContainer>
           <Icon width={36} heigth={36} alt="Icon Linkedin" src={linkedin}/>
           <Icon width={36} heigth={36} alt="Icon GitHub" src={github}/>

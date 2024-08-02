@@ -16,9 +16,10 @@ export const Hero = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 25.625rem;
+  height: 100vh;
   background-color: ${({theme}) => theme.colors.bg100};
   /* width: 100vw; */
-  z-index: 2;
+  z-index: 1;
 
 `
 export const ImageWrapper = styled(Image)`
@@ -36,6 +37,7 @@ export const HeroWrapper = styled.div`
   padding: 10.9375rem 0;
   gap: 3rem;
   width: 25rem;
+  border: 2px solid red;
 
   & Button {
       margin: 0;
@@ -49,7 +51,7 @@ export const HeroWrapper = styled.div`
     /* margin-left: 10rem; */
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 2;
   }
 
   @media (max-width: ${({theme}) => theme.breakpoints.sm}) {

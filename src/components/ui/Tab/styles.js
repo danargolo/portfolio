@@ -18,7 +18,7 @@ export const Tab = styled.div`
 
 
   @media (min-width: 769px) {
-    width: 35%;
+    width: 40%;
   }
 
   /* @media (max-width: ${({theme}) => theme.breakpoints.sm}) {

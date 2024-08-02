@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-export const Tittle = ({text, ...rest}) => {
+export const SectionTittle = ({text, ...rest}) => {
   return (
     <S.Tittle {...rest}>
       {`${text}.`}

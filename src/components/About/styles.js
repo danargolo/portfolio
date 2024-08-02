@@ -24,7 +24,8 @@ export const About = styled.section`
   align-items: center;
   /* width: 100vw; */
   min-height: 25.625rem;
-  height: fit-content;
+  height: 100vh;
+  /* height: fit-content; */
   padding-bottom: 5rem;
   /* padding-top: 5rem; */
   /* gap: 3rem; */
@@ -42,13 +43,14 @@ export const AboutWrapper = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
-  gap: 4rem;
+  /* padding-top: 5rem; */
+  /* border: 2px solid red; */
 
   @media (min-width: 769px) {
-    flex-direction: row;
-    width: 85%;
-    justify-content: center;
+    /* flex-direction: row; */
+    width: 60%;
+    gap: 2.25rem;
+    justify-content: space-around;
     align-items: center;
     
   }
@@ -64,10 +66,14 @@ export const ContainerText = styled.div`
   height: fit-content;
 
   @media (min-width: 769px) {
-    width: 50%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 8rem;
+
     /* justify-content: right; */
     /* align-items: flex-start; */
-    gap: 0.5rem;
   }
 
   @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
@@ -96,9 +102,10 @@ export const AboutText = styled.p`
   color: ${({theme}) => theme.colors.text200};
 
   @media (min-width: 769px) {
-    width: 460px;
+    width: 50%;
     height: 360px;
     text-align: left;
+    margin: 0;
   }
 
   /* @media (max-width: ${({theme}) => theme.breakpoints.sm}) {

@@ -13,11 +13,14 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18.7rem;
-  height: 26rem;
-  border-radius: 6px;
-  background-color: ${({theme}) => theme.colors.bg200};
-  border: 3px solid ${({theme}) => theme.colors.bg300 };
+  width: 20rem;
+  height: 28.125rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  /* background-color: ${({theme}) => theme.colors.bg200}; */
+  background-color: ${({theme}) => theme.colors.primary100};
+
+  /* border: 3px solid ${({theme}) => theme.colors.bg300 }; */
   /* box-shadow: 5px 5px 10px -20px rgba(0,0,0,0.62); */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   scroll-snap-align: center;
@@ -39,7 +42,7 @@ export const BackgroundCard = styled.div`
   flex-direction: column;
   align-items: center;
   /* position: relative; */
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   
   /* padding: 10px; */
@@ -62,7 +65,6 @@ export const DetailsWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 47%;
-  background-color: ${({theme}) => theme.colors.primary100};
   gap: 5px;
   border-radius: 0px 0px 3px 3px;
   /* border: 2px solid red; */
@@ -122,10 +124,10 @@ export const Description = styled(Text)`
 `
 
 export const ImageWrapper = styled(Image)`
-  border-radius: 3px 3px 0 0;
-  @media (min-width: 769px) {
+  border-radius: .3rem;
+  /* @media (min-width: 769px) {
     width: 100%;
-  }
+  } */
   /* border: 2px solid red; */
   /* margin: 5px 0; */
 `

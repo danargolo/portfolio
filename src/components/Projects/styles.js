@@ -5,14 +5,18 @@ import { Slider } from "../ui/Slider"
 import { Anchor } from "../ui/Anchor"
 
 export const Text = styled.p`
+  margin: 1.25rem;
   /* padding-top: 5rem; */
   font-size: clamp(1.032rem, 2vw, 1.125rem);
-  font-weight: 700;
-  text-align: center;
+  /* font-weight: 700; */
+  text-align: left;
+  align-self: self-start;
   color: ${({theme}) => theme.colors.text200};
+  width: 80%;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.sm}) {
-    width: 80%;
+  @media (min-width: 769px) {
+    margin: 0;
+
   }
 `
 
@@ -34,9 +38,9 @@ export const ProjectsWrapper = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   /* gap:3rem; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 5.625rem 0;
 
 

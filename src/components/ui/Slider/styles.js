@@ -41,6 +41,8 @@ export const Wrapper = styled.div`
     height: fit-content;
     margin-top: 30px;
     justify-content: center;
+    overflow-x: visible;
+
 
     & > :first-child {
       margin-left: 0;
@@ -71,7 +73,7 @@ export const Indicator = styled.div`
   height: 14px;
   border-radius: 50%;
   background-color: gray;
-  margin: 0 5px;
+  margin: 16px 8px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
   z-index: 0;

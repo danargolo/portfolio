@@ -25,7 +25,6 @@ export const ImgWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 1.1rem 0 0.0625rem;
-  /* border: 2px solid blue; */
 
   & img {
     left: 3.75rem;

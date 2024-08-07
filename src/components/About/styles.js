@@ -1,57 +1,71 @@
 "use client"
 
 import styled from "styled-components"
-import Image from "next/image"
+// import Image from "next/image"
 
-export const Tittle = styled.p`
-  margin-top: 5rem;
-  display: flex;
-  font-size: 26px;
-  color: ${({ theme }) => theme.colors.text100 };
+// export const Tittle = styled.p`
+//   margin-top: 5rem;
+//   display: flex;
+//   font-size: 26px;
+//   color: ${({ theme }) => theme.colors.text100 };
   
-  @media (min-width: 769px) {
-    margin-top: 3rem;
+//   @media (min-width: 769px) {
+//     margin-top: 3rem;
     
-  }
-`
-export const ImageWrapper = styled(Image)`
-`
+//   }
+// `
+// export const ImageWrapper = styled(Image)`
+// `
 
 export const About = styled.section`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   /* width: 100vw; */
-  min-height: 25.625rem;
-  height: 100vh;
-  /* height: fit-content; */
-  padding-bottom: 5rem;
+  /* min-height: 100vw; */
+  min-height: 60rem;
+  /* height: 100svh; */
+  /* height: max-content; */
+  /* padding-bottom: 5rem; */
   /* padding-top: 5rem; */
   /* gap: 3rem; */
   background-color: ${({theme}) => theme.colors.primary100};
   /* background-color: black; */
-  position: relative;
+  /* position: relative; */
   z-index: 1;
+  /* border: 2px solid pink; */
 
-  & hr {
-    width: 84%;
+  @media (min-width: 769px) {
+    align-items: flex-start;
+    min-height: 47.5rem;
+    
   }
 `
 
 export const AboutWrapper = styled.article`
   display: flex;
+  position: relative;
+  /* top: 3rem; */
+
   flex-direction: column;
   align-items: center;
-  /* padding-top: 5rem; */
+  padding: 5.625rem 0;
   /* border: 2px solid red; */
+  /* gap: 2.25rem; */
 
   @media (min-width: 769px) {
     /* flex-direction: row; */
+    /* position: relative; */
+    /* top: 0; */
+    /* bottom: 3.125rem; */
     width: 60%;
-    gap: 2.25rem;
+    
+    
     justify-content: space-around;
     align-items: center;
+    gap: 2.25rem;
+
     
   }
 `
@@ -61,7 +75,9 @@ export const ContainerText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.2rem;
+  /* gap: 0.2rem; */
+  gap: 2.25rem;
+
   width: 25rem;
   height: fit-content;
 

@@ -33,11 +33,10 @@ export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   padding: 10.9375rem 0;
   gap: 3rem;
   width: 25rem;
-  border: 2px solid red;
 
   & Button {
       margin: 0;
@@ -45,9 +44,9 @@ export const HeroWrapper = styled.div`
 
   @media (min-width: 769px) {
     position: relative;
-    width: 65%;
+    width: 60%;
     bottom: 60px;
-    right: 20px;
+    /* right: 20px; */
     /* margin-left: 10rem; */
     justify-content: center;
     align-items: center;
@@ -66,6 +65,8 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 2px solid blue; */
+
   /* padding: 0.9rem; */
   /* gap: 1.25rem; */
 
@@ -73,6 +74,7 @@ export const TextContainer = styled.div`
     position: relative;
     width: 85%;
     justify-content: center;
+    align-self: self-start;
     align-items: flex-start;
     padding: 0;
     

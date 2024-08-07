@@ -16,9 +16,9 @@ export const Projects = () => {
   return (
     <S.Projects id="projects">
       {/* <Hr text="Projetos"/> */}
-      <SectionTittle text="Projetos" />
-      <S.Text>Alguns dos meus projetos favoritos.</S.Text>
       <S.ProjectsWrapper>
+        <SectionTittle text="Projetos" />
+        <S.Text>Alguns dos meus projetos favoritos.</S.Text>
         <Slider data={projects}/>
         {/* <S.StyledAnchor text="Ver todos" disabled/> */}
       </S.ProjectsWrapper>

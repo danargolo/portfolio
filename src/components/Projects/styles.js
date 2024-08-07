@@ -5,7 +5,7 @@ import { Slider } from "../ui/Slider"
 import { Anchor } from "../ui/Anchor"
 
 export const Text = styled.p`
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   font-size: clamp(1.032rem, 2vw, 1.125rem);
   font-weight: 700;
   text-align: center;
@@ -19,16 +19,15 @@ export const Text = styled.p`
 export const Projects = styled.section`
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   justify-content: center;
   align-items: center;
   /* width: 100vw; */
   min-height: 25.625rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 2rem; */
   /* gap: 3rem; */
   background-color: ${({theme}) => theme.colors.bg100};
   z-index: 1;
-
 `
 export const ProjectsWrapper = styled.article`
   display: flex;
@@ -36,7 +35,22 @@ export const ProjectsWrapper = styled.article`
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap:3rem;
+  /* gap:3rem; */
+  border: 2px solid red;
+  padding: 5.625rem 0;
+
+
+  @media (min-width: 769px) {
+    /* flex-direction: row; */
+    position: relative;
+    /* bottom: 50px; */
+    width: 60%;
+    gap: 2.25rem;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
 `
 
 export const StyledSlider = styled(Slider)`

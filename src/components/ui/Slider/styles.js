@@ -57,6 +57,7 @@ export const Wrapper = styled.div`
 export const IndicatorWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin: 1.5rem;
   width: 65%;
   gap: 12px;
   z-index: 1;
@@ -73,7 +74,7 @@ export const Indicator = styled.div`
   height: 14px;
   border-radius: 50%;
   background-color: gray;
-  margin: 16px 8px;
+  margin: 0 5px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
   z-index: 0;

@@ -9,7 +9,7 @@ export const Text = styled.p`
   /* padding-top: 5rem; */
   font-size: clamp(1.032rem, 2vw, 1.125rem);
   /* font-weight: 700; */
-  text-align: left;
+  text-align: justify;
   align-self: self-start;
   color: ${({theme}) => theme.colors.text200};
   width: 80%;
@@ -41,7 +41,8 @@ export const ProjectsWrapper = styled.article`
   /* width: 100%; */
   /* gap:3rem; */
   /* border: 2px solid red; */
-  padding: 5.625rem 0;
+  padding-top: 5.625rem;
+  /* padding: 5.625rem 0; */
 
 
   @media (min-width: 769px) {

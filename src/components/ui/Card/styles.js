@@ -13,8 +13,8 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20rem;
-  height: 28.125rem;
+  width: 19rem;
+  height: 26.125rem;
   padding: 1rem;
   border-radius: 0.6rem;
   /* background-color: ${({theme}) => theme.colors.bg200}; */

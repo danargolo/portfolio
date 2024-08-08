@@ -14,14 +14,14 @@ const projects = ['1','2','3','1','2','3'];
 
 export const Projects = () => {
   return (
-    <S.Projects id="projects">
+    <S.Projects id="projects" style={{border:"2px solid red"}}>
       {/* <Hr text="Projetos"/> */}
-      <S.ProjectsWrapper>
+      <S.ProjectsWrapper style={{border:"2px solid blue"}}>
         <SectionTittle text="Projetos" />
         <S.Text>Alguns dos meus projetos favoritos.</S.Text>
-        <Slider data={projects}/>
         {/* <S.StyledAnchor text="Ver todos" disabled/> */}
       </S.ProjectsWrapper>
+      <Slider data={projects}/>
     </S.Projects>
   );
 };
